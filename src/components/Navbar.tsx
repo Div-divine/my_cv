@@ -111,12 +111,14 @@ const Navbar = () => {
             {link.name}
           </a>
         ))}
-        <LanguageSwitcher />
       </div>
 
-      <button className="mobile-menu-btn" onClick={() => setIsMenuOpen(!isMenuOpen)}>
-        {isMenuOpen ? <X size={28} /> : <Menu size={28} />}
-      </button>
+      <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+        <LanguageSwitcher />
+        <button className="mobile-menu-btn" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+          {isMenuOpen ? <X size={28} /> : <Menu size={28} />}
+        </button>
+      </div>
 
       {isMenuOpen && (
         <div className="mobile-nav-container">
@@ -136,9 +138,6 @@ const Navbar = () => {
               {link.name}
             </a>
           ))}
-          <div style={{ marginTop: '1rem' }}>
-            <LanguageSwitcher />
-          </div>
         </div>
       )}
     </nav>
