@@ -1,3 +1,5 @@
+'use client';
+
 import Hero from '@/components/Hero';
 import About from '@/components/About';
 import Skills from '@/components/Skills';
@@ -6,8 +8,11 @@ import Leadership from '@/components/Leadership';
 import Projects from '@/components/Projects';
 import Education from '@/components/Education';
 import Navbar from '@/components/Navbar';
+import { LanguageProvider, useLanguage } from '@/components/LanguageContext';
 
-export default function Home() {
+function HomeContent() {
+  const { t } = useLanguage();
+
   return (
     <main>
       <Navbar />
@@ -22,23 +27,31 @@ export default function Home() {
         <Projects />
         <Education />
       </div>
-      
-      <footer style={{ 
-        backgroundColor: 'var(--color-primary-dark)', 
-        color: 'white', 
-        padding: '4rem 2rem', 
-        textAlign: 'center' 
+
+      <footer style={{
+        backgroundColor: 'var(--color-primary-dark)',
+        color: 'white',
+        padding: '4rem 2rem',
+        textAlign: 'center'
       }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
           <h2 style={{ fontSize: '2rem', marginBottom: '1rem' }}>
             Divine <span style={{ color: 'var(--color-gold)' }}>Osuu</span>
           </h2>
-          <p style={{ opacity: 0.7, marginBottom: '2rem' }}>Full Stack Developer</p>
+          <p style={{ opacity: 0.7, marginBottom: '2rem' }}>{t.footer.role}</p>
           <div style={{ borderTop: '1px solid rgba(255,255,255,0.1)', paddingTop: '2rem', opacity: 0.5, fontSize: '0.9rem' }}>
-            © {new Date().getFullYear()} Divine Osuu. All rights reserved.
+            © {new Date().getFullYear()} Divine Osuu. {t.footer.rights}
           </div>
         </div>
       </footer>
     </main>
+  );
+}
+
+export default function Home() {
+  return (
+    <LanguageProvider>
+      <HomeContent />
+    </LanguageProvider>
   );
 }

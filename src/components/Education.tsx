@@ -1,30 +1,17 @@
+'use client';
+
 import React from 'react';
 import { GraduationCap } from 'lucide-react';
-
-const educationData = [
-  {
-    title: 'Full Stack Developer - Level 5 Technical Professional (BAC+2)',
-    institution: 'GRETA-CFA Aquitaine - Bayonne, France',
-    year: '2023 - 2024'
-  },
-  {
-    title: 'Back-End Development with Python, SQL & DevOps',
-    institution: 'Nucamp Coding Bootcamp - USA (Remote)',
-    year: '2022'
-  },
-  {
-    title: 'Scientific Baccalaureate',
-    institution: 'Emmaüs High School - Lomé, Togo',
-    year: '2016'
-  }
-];
+import { useLanguage } from './LanguageContext';
 
 const Education = () => {
+  const { t } = useLanguage();
+
   return (
     <section className="section" id="education">
-      <h2 className="h2">Education</h2>
+      <h2 className="h2">{t.education.title}</h2>
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem' }}>
-        {educationData.map((item, index) => (
+        {t.education.items.map((item, index) => (
           <div key={index} className="card glass" style={{ display: 'flex', gap: '1.5rem', alignItems: 'flex-start' }}>
             <div style={{
               backgroundColor: 'var(--color-primary)',

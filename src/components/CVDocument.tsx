@@ -2,8 +2,8 @@
 
 import React from 'react';
 import { Page, Text, View, Document, StyleSheet, Font, Svg, Path, Image } from '@react-pdf/renderer';
+import { translations, Lang } from '@/translations';
 
-// Register Inter font (local TTF files)
 Font.register({
   family: 'Inter',
   fonts: [
@@ -14,7 +14,6 @@ Font.register({
   ],
 });
 
-// Disable hyphenation for cleaner text
 Font.registerHyphenationCallback((word) => [word]);
 
 const C = {
@@ -30,14 +29,12 @@ const C = {
   bgSubtle: '#f1f5f9',
 };
 
-// Reusable SVG icon component
 const Icon = ({ d, size = 10, color = C.accent }: { d: string; size?: number; color?: string }) => (
   <Svg width={size} height={size} viewBox="0 0 24 24">
     <Path d={d} fill="none" stroke={color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
   </Svg>
 );
 
-// SVG icon paths (Lucide-compatible)
 const I = {
   mapPin: 'M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z M12 13a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z',
   mail: 'M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2Z M22 6l-10 7L2 6',
@@ -47,7 +44,6 @@ const I = {
   globe: 'M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Z M2 12h20 M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10Z',
 };
 
-// Styles
 const s = StyleSheet.create({
   page: {
     padding: 0,
@@ -55,13 +51,9 @@ const s = StyleSheet.create({
     color: C.text,
     backgroundColor: C.white,
   },
-
-  // Fixed top spacer for page 2+
   page2TopSpacer: {
     height: 30,
   },
-
-  // Header band
   headerBand: {
     backgroundColor: C.primary,
     paddingHorizontal: 40,
@@ -123,8 +115,6 @@ const s = StyleSheet.create({
     fontSize: 8.5,
     color: 'rgba(255,255,255,0.9)',
   },
-
-  // Body
   body: {
     paddingHorizontal: 40,
     paddingTop: 20,
@@ -133,8 +123,6 @@ const s = StyleSheet.create({
   pageBreakSpacer: {
     height: 20,
   },
-
-  // Section header
   sectionHeader: {
     flexDirection: 'row',
     alignItems: 'center',
@@ -154,14 +142,11 @@ const s = StyleSheet.create({
     textTransform: 'uppercase',
     letterSpacing: 1.5,
   },
-
   summary: {
     fontSize: 9.5,
     lineHeight: 1.7,
     color: C.textSecondary,
   },
-
-  // Experience items
   expItem: {
     marginBottom: 14,
   },
@@ -204,8 +189,6 @@ const s = StyleSheet.create({
     lineHeight: 1.5,
     color: C.textSecondary,
   },
-
-  // Skills grid
   skillsRow: {
     flexDirection: 'row',
     flexWrap: 'wrap',
@@ -228,8 +211,6 @@ const s = StyleSheet.create({
     paddingVertical: 3,
     borderRadius: 3,
   },
-
-  // Education / two-column bottom
   twoCol: {
     flexDirection: 'row',
     gap: 24,
@@ -253,8 +234,6 @@ const s = StyleSheet.create({
     fontSize: 8,
     color: C.textMuted,
   },
-
-  // Projects
   projectRow: {
     marginBottom: 6,
   },
@@ -272,8 +251,6 @@ const s = StyleSheet.create({
     color: C.textSecondary,
     lineHeight: 1.45,
   },
-
-  // Languages
   langRow: {
     flexDirection: 'row',
     gap: 24,
@@ -288,8 +265,6 @@ const s = StyleSheet.create({
     fontSize: 8,
     color: C.textMuted,
   },
-
-  // Page 2 mini header
   page2Header: {
     backgroundColor: C.primary,
     paddingHorizontal: 40,
@@ -310,8 +285,6 @@ const s = StyleSheet.create({
     textTransform: 'uppercase',
     letterSpacing: 1.5,
   },
-
-  // Footer
   footer: {
     position: 'absolute',
     bottom: 15,
@@ -343,7 +316,6 @@ const Bullet = ({ text }: { text: string }) => (
   </View>
 );
 
-// Skills category component
 const SkillGroup = ({ label, skills }: { label: string; skills: string[] }) => (
   <View style={{ marginBottom: 6 }}>
     <Text style={s.skillCatLabel}>{label}</Text>
@@ -355,232 +327,145 @@ const SkillGroup = ({ label, skills }: { label: string; skills: string[] }) => (
   </View>
 );
 
-// Document
-const CVDocument = () => (
-  <Document
-    author="Divine Osuu"
-    title="Divine Osuu - Full Stack Developer CV"
-    subject="Professional CV"
-    creator="Divine Osuu"
-    producer="Divine Osuu"
-  >
-    <Page size="A4" style={s.page}>
-      {/* Top spacer - only visible on page 2+ to add breathing room */}
-      <View fixed render={({ pageNumber }) =>
-        pageNumber > 1 ? (
-          <View style={s.page2TopSpacer} />
-        ) : null
-      }
-      />
+const CVDocument = ({ lang = 'en' }: { lang?: Lang }) => {
+  const t = translations[lang].pdf;
 
-      {/* Footer - only visible on page 2+ */}
-      {/* <View fixed render={({ pageNumber }) =>
-        pageNumber > 1 ? (
-          <View style={s.footer}>
-            <Text style={s.footerText}>
-              Divine Osuu - Full Stack Developer
-            </Text>
+  return (
+    <Document
+      author="Divine Osuu"
+      title={t.docTitle}
+      subject="Professional CV"
+      creator="Divine Osuu"
+      producer="Divine Osuu"
+    >
+      <Page size="A4" style={s.page}>
+        <View fixed render={({ pageNumber }) =>
+          pageNumber > 1 ? (
+            <View style={s.page2TopSpacer} />
+          ) : null
+        }
+        />
+
+        <View style={s.headerBand}>
+          <View style={s.profileImageContainer}>
+            <Image src="/profile-img-removebg.png" style={s.profileImage} />
           </View>
-        ) : null
-      }
-      />
-
-      {/* Main Header Band - page 1 only */}
-      <View style={s.headerBand}>
-        <View style={s.profileImageContainer}>
-          <Image src="/profile-img-removebg.png" style={s.profileImage} />
-        </View>
-        <View style={s.headerContent}>
-          <View style={s.nameRow}>
-            <Text style={s.name}>Divine Osuu</Text>
-            <Text style={s.roleText}>Full Stack Developer</Text>
-          </View>
-
-          <View style={s.contactRow}>
-            <View style={s.contactItem}>
-              <Icon d={I.mapPin} size={9} color={C.gold} />
-              <Text style={s.contactLabel}>France</Text>
-            </View>
-            <View style={s.contactItem}>
-              <Icon d={I.mail} size={9} color={C.gold} />
-              <Text style={s.contactLabel}>divineosuuweb@gmail.com</Text>
-            </View>
-            <View style={s.contactItem}>
-              <Icon d={I.phone} size={9} color={C.gold} />
-              <Text style={s.contactLabel}>+33 (0)7 49 65 06 96</Text>
-            </View>
-            <View style={s.contactItem}>
-              <Icon d={I.linkedin} size={9} color={C.gold} />
-              <Text style={s.contactLabel}>linkedin.com/in/divine-osuu-36a3a0301</Text>
-            </View>
-            <View style={s.contactItem}>
-              <Icon d={I.github} size={9} color={C.gold} />
-              <Text style={s.contactLabel}>github.com/Div-divine</Text>
-            </View>
-          </View>
-        </View>
-      </View>
-
-      {/* All content in a single flowing body */}
-      <View style={s.body}>
-        {/* Profile */}
-        <Section title="Professional Profile" />
-        <Text style={s.summary}>
-          Full stack developer with professional software development experience and strong production experience across backend systems, frontend architecture, authentication, APIs, and deployment workflows. Expert in designing scalable applications using Symfony, Node.js, Next.js, and PostgreSQL. Comfortable working across the complete software lifecycle including architecture, security, and production maintenance. Brings several years of leadership and business responsibility from entrepreneurship roles, strengthening problem-solving and decision-making abilities. Currently expanding into cross-platform mobile development with Flutter.
-        </Text>
-
-        {/* Experience */}
-        <Section title="Professional Experience" />
-
-        <View style={s.expItem}>
-          <View style={s.expTopRow}>
-            <Text style={s.expTitle}>Full Stack Developer</Text>
-            <Text style={s.expDate}>July 2024 - Present</Text>
-          </View>
-          <Text style={s.expCompany}>IF Technologies - France</Text>
-          <Bullet text="Develop and maintain production-grade full stack applications using Symfony, Vue.js, PostgreSQL, Node.js, and Tailwind CSS" />
-          <Bullet text="Design backend systems including APIs, authentication flows, and database architecture" />
-          <Bullet text="Implement authentication systems using JWT, RBAC, and LemonLDAP::NG" />
-          <Bullet text="Create and maintain API documentation using Swagger, Nelmio, and GitBook" />
-          <Bullet text="Participate in architecture discussions, technical planning, and feature roadmap decisions" />
-          <Bullet text="Work directly with clients to analyze requirements and define technical solutions" />
-        </View>
-
-        <View style={s.expItem}>
-          <View style={s.expTopRow}>
-            <Text style={s.expTitle}>Web Developer Intern</Text>
-            <Text style={s.expDate}>April - June 2024</Text>
-          </View>
-          <Text style={s.expCompany}>PIC DIGITAL - Bidart, France</Text>
-          <Bullet text="Developed frontend and backend tasks using Next.js and Express.js" />
-          <Bullet text="Implemented unit testing and CI/CD integration for robust production deployment" />
-          <Bullet text="Contributed to responsive UI implementation and frontend improvements" />
-          <Bullet text="Participated in hosting configuration and deployment tasks" />
-        </View>
-
-        <View style={s.expItem}>
-          <View style={s.expTopRow}>
-            <Text style={s.expTitle}>Freelance Full Stack Developer</Text>
-            <Text style={s.expDate}>2022 - Present</Text>
-          </View>
-          <Text style={s.expCompany}>Remote - France</Text>
-          <Bullet text="Marion Poizeau Website: Initially developed with WordPress (2022); fully rebuilt using Next.js in April 2026 for production scalability" />
-          <Bullet text="Timeo Coaching Platform: Designed and developed a full stack coaching platform using Next.js, Prismic CMS, GSAP, and Vercel" />
-          <Bullet text="Provide ongoing maintenance, security updates, and performance optimization for both platforms" />
-          <Bullet text="Managed deployment workflows, SEO optimization, and production updates" />
-        </View>
-
-        {/* Core Technical Skills */}
-        <Section title="Core Technical Skills" />
-        <View style={{ flexDirection: 'row', gap: 16 }}>
-          <View style={{ flex: 1 }}>
-            <SkillGroup label="Backend & Auth" skills={['Symfony (PHP)', 'Node.js', 'Express.js', 'REST APIs', 'JWT', 'OAuth2', 'RBAC', 'SSO', 'LemonLDAP::NG']} />
-            <SkillGroup label="Databases & DevOps" skills={['PostgreSQL', 'MySQL', 'Docker', 'Git', 'Vercel', 'AWS (EC2, S3)', 'CI/CD']} />
-            <SkillGroup label="Documentation" skills={['Swagger / OpenAPI', 'Nelmio API Doc', 'GitBook']} />
-          </View>
-          <View style={{ flex: 1 }}>
-            <SkillGroup label="Frontend & UI" skills={['Next.js', 'React', 'Vue.js', 'Tailwind CSS', 'PrimeVue', 'PrimeFlex', 'GSAP', 'Responsive Design']} />
-            <SkillGroup label="CMS & Mobile" skills={['WordPress', 'Prismic CMS', 'Headless CMS', 'Flutter', 'Dart']} />
-          </View>
-        </View>
-
-        {/* Leadership & Business - starts on page 2 */}
-        <View break>
-          <Section title="Leadership & Business" />
-        </View>
-
-        <View style={s.expItem}>
-          <View style={s.expTopRow}>
-            <Text style={s.expTitle}>Manager</Text>
-            <Text style={s.expDate}>2018 - 2022</Text>
-          </View>
-          <Text style={s.expCompany}>BIATA COMPANIES - Lagos, Nigeria</Text>
-          <Bullet text="Managed company operations and supervised multidisciplinary teams" />
-          <Bullet text="Oversaw technical support services and operational workflows" />
-          <Bullet text="Coordinated equipment management and logistics" />
-        </View>
-
-        <View style={s.expItem}>
-          <View style={s.expTopRow}>
-            <Text style={s.expTitle}>Team Leader</Text>
-            <Text style={s.expDate}>2016 - 2019</Text>
-          </View>
-          <Text style={s.expCompany}>BIATA Ayo Ventures - Lagos, Nigeria</Text>
-          <Bullet text="Managed technical support operations and company equipment" />
-          <Bullet text="Supervised operational teams and workflow execution" />
-          <Bullet text="Maintained high operational standards and client satisfaction" />
-        </View>
-
-        <View style={s.expItem}>
-          <View style={s.expTopRow}>
-            <Text style={s.expTitle}>Business Owner</Text>
-            <Text style={s.expDate}>2020 - Present</Text>
-          </View>
-          <Text style={s.expCompany}>Maggy-nificent Enterprise</Text>
-          <Bullet text="Managed business operations, logistics, and financial activities" />
-          <Bullet text="Oversaw accounting, payments, and supplier coordination" />
-          <Bullet text="Handled operational decision-making and business administration" />
-        </View>
-
-        {/* Education & Projects side-by-side */}
-        <View style={s.twoCol}>
-          <View style={s.colHalf}>
-            <Section title="Education" />
-            <View style={s.eduItem}>
-              <Text style={s.eduTitle}>Full Stack Developer - Level 5 Technical Professional (BAC+2)</Text>
-              <Text style={s.eduInstitution}>GRETA-CFA Aquitaine - Bayonne, France</Text>
-              <Text style={s.eduYear}>2023 - 2024</Text>
-            </View>
-            <View style={s.eduItem}>
-              <Text style={s.eduTitle}>Back-End Development</Text>
-              <Text style={s.eduInstitution}>Nucamp Coding Bootcamp - USA (Remote)</Text>
-              <Text style={s.eduYear}>2022</Text>
-            </View>
-            <View style={s.eduItem}>
-              <Text style={s.eduTitle}>Scientific Baccalaureate</Text>
-              <Text style={s.eduInstitution}>Emmaüs High School - Lomé, Togo</Text>
-              <Text style={s.eduYear}>2016</Text>
+          <View style={s.headerContent}>
+            <View style={s.nameRow}>
+              <Text style={s.name}>Divine Osuu</Text>
+              <Text style={s.roleText}>{t.role}</Text>
             </View>
 
-            <Section title="Languages" />
-            <View style={s.langRow}>
-              <View>
-                <Text style={s.langItem}>English</Text>
-                <Text style={s.langLevel}>Professional</Text>
+            <View style={s.contactRow}>
+              <View style={s.contactItem}>
+                <Icon d={I.mapPin} size={9} color={C.gold} />
+                <Text style={s.contactLabel}>France</Text>
               </View>
-              <View>
-                <Text style={s.langItem}>French</Text>
-                <Text style={s.langLevel}>Professional</Text>
+              <View style={s.contactItem}>
+                <Icon d={I.mail} size={9} color={C.gold} />
+                <Text style={s.contactLabel}>divineosuuweb@gmail.com</Text>
               </View>
-              <View>
-                <Text style={s.langItem}>Igbo</Text>
-                <Text style={s.langLevel}>Native</Text>
+              <View style={s.contactItem}>
+                <Icon d={I.phone} size={9} color={C.gold} />
+                <Text style={s.contactLabel}>+33 (0)7 49 65 06 96</Text>
+              </View>
+              <View style={s.contactItem}>
+                <Icon d={I.linkedin} size={9} color={C.gold} />
+                <Text style={s.contactLabel}>linkedin.com/in/divine-osuu-36a3a0301</Text>
+              </View>
+              <View style={s.contactItem}>
+                <Icon d={I.github} size={9} color={C.gold} />
+                <Text style={s.contactLabel}>github.com/Div-divine</Text>
               </View>
             </View>
           </View>
+        </View>
 
-          <View style={s.colHalf}>
-            <Section title="Featured Professional Projects" />
-            <View style={s.projectRow}>
-              <Text style={s.projectName}>Marion Poizeau Website</Text>
-              <Text style={s.projectUrl}>marionpoizeau.com</Text>
-              <Text style={s.projectDesc}>Full Next.js rebuild with ongoing maintenance and SEO optimization.</Text>
+        <View style={s.body}>
+          <Section title={t.profileTitle} />
+          <Text style={s.summary}>{t.profileSummary}</Text>
+
+          <Section title={t.experienceTitle} />
+          {t.jobs.map((job, idx) => (
+            <View key={idx} style={s.expItem}>
+              <View style={s.expTopRow}>
+                <Text style={s.expTitle}>{job.role}</Text>
+                <Text style={s.expDate}>{job.period}</Text>
+              </View>
+              <Text style={s.expCompany}>{job.company}</Text>
+              {job.bullets.map((b, bi) => (
+                <Bullet key={bi} text={b} />
+              ))}
             </View>
-            <View style={s.projectRow}>
-              <Text style={s.projectName}>Timeo Coaching Platform</Text>
-              <Text style={s.projectUrl}>timeocoaching.com</Text>
-              <Text style={s.projectDesc}>Full stack platform with Prismic CMS, GSAP animations, and Vercel deployment.</Text>
+          ))}
+
+          <Section title={t.skillsTitle} />
+          <View style={{ flexDirection: 'row', gap: 16 }}>
+            <View style={{ flex: 1 }}>
+              <SkillGroup label={t.skillCategories.backendAuth} skills={t.skillItems.backendAuth} />
+              <SkillGroup label={t.skillCategories.databasesDevops} skills={t.skillItems.databasesDevops} />
+              <SkillGroup label={t.skillCategories.documentation} skills={t.skillItems.documentation} />
             </View>
-            <View style={s.projectRow}>
-              <Text style={s.projectName}>Private Flutter Application</Text>
-              <Text style={s.projectDesc}>Cross-platform mobile app - architecture, API integration, and state management.</Text>
+            <View style={{ flex: 1 }}>
+              <SkillGroup label={t.skillCategories.frontendUi} skills={t.skillItems.frontendUi} />
+              <SkillGroup label={t.skillCategories.cmsMobile} skills={t.skillItems.cmsMobile} />
+            </View>
+          </View>
+
+          <View break>
+            <Section title={t.leadershipTitle} />
+          </View>
+
+          {t.leadershipRoles.map((role, idx) => (
+            <View key={idx} style={s.expItem}>
+              <View style={s.expTopRow}>
+                <Text style={s.expTitle}>{role.role}</Text>
+                <Text style={s.expDate}>{role.period}</Text>
+              </View>
+              <Text style={s.expCompany}>{role.company}</Text>
+              {role.bullets.map((b, bi) => (
+                <Bullet key={bi} text={b} />
+              ))}
+            </View>
+          ))}
+
+          <View style={s.twoCol}>
+            <View style={s.colHalf}>
+              <Section title={t.educationTitle} />
+              {t.educationItems.map((edu, idx) => (
+                <View key={idx} style={s.eduItem}>
+                  <Text style={s.eduTitle}>{edu.title}</Text>
+                  <Text style={s.eduInstitution}>{edu.institution}</Text>
+                  <Text style={s.eduYear}>{edu.year}</Text>
+                </View>
+              ))}
+
+              <Section title={t.languagesTitle} />
+              <View style={s.langRow}>
+                {t.languages.map((lang, idx) => (
+                  <View key={idx}>
+                    <Text style={s.langItem}>{lang.name}</Text>
+                    <Text style={s.langLevel}>{lang.level}</Text>
+                  </View>
+                ))}
+              </View>
+            </View>
+
+            <View style={s.colHalf}>
+              <Section title={t.projectsTitle} />
+              {t.projectItems.map((proj, idx) => (
+                <View key={idx} style={s.projectRow}>
+                  <Text style={s.projectName}>{proj.name}</Text>
+                  {proj.url ? <Text style={s.projectUrl}>{proj.url}</Text> : null}
+                  <Text style={s.projectDesc}>{proj.desc}</Text>
+                </View>
+              ))}
             </View>
           </View>
         </View>
-      </View>
-    </Page>
-  </Document>
-);
+      </Page>
+    </Document>
+  );
+};
 
 export default CVDocument;
-

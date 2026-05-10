@@ -4,9 +4,11 @@ import React, { useEffect, useState } from 'react';
 import { PDFDownloadLink } from '@react-pdf/renderer';
 import CVDocument from './CVDocument';
 import { Download } from 'lucide-react';
+import { useLanguage } from './LanguageContext';
 
 const DownloadButton = () => {
   const [isClient, setIsClient] = useState(false);
+  const { lang, t } = useLanguage();
 
   useEffect(() => {
     setIsClient(true);
@@ -16,32 +18,32 @@ const DownloadButton = () => {
     return (
       <button className="btn-gold" disabled>
         <Download size={20} />
-        Loading CV...
+        {t.download.loading}
       </button>
     );
   }
 
   return (
-    <PDFDownloadLink document={<CVDocument />} fileName="Divine_Osuu_CV.pdf">
+    <PDFDownloadLink document={<CVDocument lang={lang} />} fileName={t.download.fileName}>
       {({ blob, url, loading, error }) => {
         if (error) {
           console.error("PDF generation error:", error);
           return (
             <button className="btn-gold" disabled>
               <Download size={20} />
-              Error generating PDF
+              {t.download.error}
             </button>
           );
         }
         return loading ? (
           <button className="btn-gold" disabled>
             <Download size={20} />
-            Preparing PDF...
+            {t.download.preparing}
           </button>
         ) : (
           <button className="btn-gold">
             <Download size={20} />
-            Download CV
+            {t.download.ready}
           </button>
         );
       }}

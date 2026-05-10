@@ -1,9 +1,11 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
+import { useLanguage } from './LanguageContext';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const { lang, setLang, t } = useLanguage();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -14,13 +16,13 @@ const Navbar = () => {
   }, []);
 
   const navLinks = [
-    { name: 'Home', href: '#home' },
-    { name: 'About', href: '#about' },
-    { name: 'Skills', href: '#skills' },
-    { name: 'Experience', href: '#experience' },
-    { name: 'Leadership', href: '#leadership' },
-    { name: 'Projects', href: '#projects' },
-    { name: 'Education', href: '#education' },
+    { name: t.nav.home, href: '#home' },
+    { name: t.nav.about, href: '#about' },
+    { name: t.nav.skills, href: '#skills' },
+    { name: t.nav.experience, href: '#experience' },
+    { name: t.nav.leadership, href: '#leadership' },
+    { name: t.nav.projects, href: '#projects' },
+    { name: t.nav.education, href: '#education' },
   ];
 
   return (
@@ -42,14 +44,14 @@ const Navbar = () => {
       <div style={{ fontWeight: 800, fontSize: '1.5rem', letterSpacing: '-1px' }}>
         DIVINE<span style={{ color: 'var(--color-gold)' }}>OSUU</span>
       </div>
-      
-      <div style={{ display: 'flex', gap: '2rem' }}>
+
+      <div style={{ display: 'flex', gap: '2rem', alignItems: 'center' }}>
         {navLinks.map((link) => (
-          <a 
-            key={link.name} 
+          <a
+            key={link.href}
             href={link.href}
-            style={{ 
-              fontWeight: 600, 
+            style={{
+              fontWeight: 600,
               fontSize: '0.9rem',
               color: isScrolled ? 'var(--color-white)' : 'inherit',
               opacity: 0.8
@@ -60,6 +62,55 @@ const Navbar = () => {
             {link.name}
           </a>
         ))}
+
+        <div style={{
+          display: 'flex',
+          borderRadius: '9999px',
+          overflow: 'hidden',
+          border: `1px solid ${isScrolled ? 'rgba(255,255,255,0.3)' : 'var(--color-gray-200)'}`,
+          fontSize: '0.8rem',
+          fontWeight: 700,
+          cursor: 'pointer',
+        }}>
+          <button
+            onClick={() => setLang('fr')}
+            style={{
+              padding: '0.35rem 0.75rem',
+              border: 'none',
+              cursor: 'pointer',
+              backgroundColor: lang === 'fr'
+                ? 'var(--color-gold)'
+                : 'transparent',
+              color: lang === 'fr'
+                ? 'var(--color-primary-dark)'
+                : isScrolled ? 'var(--color-white)' : 'var(--color-primary-dark)',
+              fontWeight: 700,
+              fontSize: '0.8rem',
+              transition: 'all 0.25s ease',
+            }}
+          >
+            FR
+          </button>
+          <button
+            onClick={() => setLang('en')}
+            style={{
+              padding: '0.35rem 0.75rem',
+              border: 'none',
+              cursor: 'pointer',
+              backgroundColor: lang === 'en'
+                ? 'var(--color-gold)'
+                : 'transparent',
+              color: lang === 'en'
+                ? 'var(--color-primary-dark)'
+                : isScrolled ? 'var(--color-white)' : 'var(--color-primary-dark)',
+              fontWeight: 700,
+              fontSize: '0.8rem',
+              transition: 'all 0.25s ease',
+            }}
+          >
+            ENG
+          </button>
+        </div>
       </div>
     </nav>
   );
