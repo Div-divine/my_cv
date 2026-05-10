@@ -284,6 +284,7 @@ export const translations = {
         { name: 'English', level: 'Professional' },
         { name: 'French', level: 'Professional' },
         { name: 'Igbo', level: 'Native' },
+        { name: 'Ewe', level: 'Fluent' },
       ],
 
       projectItems: [
@@ -607,6 +608,7 @@ export const translations = {
         { name: 'Anglais', level: 'Professionnel' },
         { name: 'Français', level: 'Professionnel' },
         { name: 'Igbo', level: 'Langue Maternelle' },
+        { name: 'Ewe', level: 'Courant' },
       ],
 
       projectItems: [

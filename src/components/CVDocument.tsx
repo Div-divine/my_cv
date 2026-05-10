@@ -70,12 +70,15 @@ const s = StyleSheet.create({
     borderWidth: 2.5,
     borderColor: C.gold,
     overflow: 'hidden',
-    alignItems: 'center',
     justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: C.primary,
   },
+
   profileImage: {
-    width: 64,
-    height: 64,
+    width: 58,
+    height: 58,
+    borderRadius: 29,
     objectFit: 'cover',
   },
   headerContent: {
@@ -408,7 +411,9 @@ const CVDocument = ({ lang = 'en' }: { lang?: Lang }) => {
             </View>
           ))}
 
-          <Section title={t.skillsTitle} />
+          <View break>
+            <Section title={t.skillsTitle} />
+          </View>
           <View style={{ flexDirection: 'row', gap: 16 }}>
             <View style={{ flex: 1 }}>
               <SkillGroup label={t.skillCategories.backendAuth} skills={t.skillItems.backendAuth} />
@@ -421,9 +426,7 @@ const CVDocument = ({ lang = 'en' }: { lang?: Lang }) => {
             </View>
           </View>
 
-          <View break>
-            <Section title={t.leadershipTitle} />
-          </View>
+          <Section title={t.leadershipTitle} />
 
           {t.leadershipRoles.map((role, idx) => (
             <View key={idx} style={s.expItem}>
