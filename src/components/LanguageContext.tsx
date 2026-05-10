@@ -3,7 +3,7 @@
 import React, { createContext, useContext, useState, ReactNode } from 'react';
 import { translations, Lang } from '@/translations';
 
-type Translations = typeof translations.en;
+type Translations = typeof translations.en | typeof translations.fr;
 
 interface LanguageContextType {
   lang: Lang;
