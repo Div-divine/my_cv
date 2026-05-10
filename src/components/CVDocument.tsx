@@ -358,6 +358,11 @@ const SkillGroup = ({ label, skills }: { label: string; skills: string[] }) => (
 // Document
 const CVDocument = () => (
   <Document
+    author="Divine Osuu"
+    title="Divine Osuu - Full Stack Developer CV"
+    subject="Professional CV"
+    creator="Divine Osuu"
+    producer="Divine Osuu"
   >
     <Page size="A4" style={s.page}>
       {/* Top spacer - only visible on page 2+ to add breathing room */}
