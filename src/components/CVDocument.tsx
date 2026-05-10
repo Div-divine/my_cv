@@ -316,12 +316,21 @@ const Bullet = ({ text }: { text: string }) => (
   </View>
 );
 
-const SkillGroup = ({ label, skills }: { label: string; skills: string[] }) => (
+const SkillGroup = ({
+  label,
+  skills,
+}: {
+  label: string;
+  skills: readonly string[];
+}) => (
   <View style={{ marginBottom: 6 }}>
     <Text style={s.skillCatLabel}>{label}</Text>
+
     <View style={s.skillsRow}>
       {skills.map((skill, i) => (
-        <Text key={i} style={s.skillTag}>{skill}</Text>
+        <Text key={i} style={s.skillTag}>
+          {skill}
+        </Text>
       ))}
     </View>
   </View>
