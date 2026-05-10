@@ -16,7 +16,7 @@ const Projects = () => {
   return (
     <section className="section" id="projects">
       <h2 className="h2">{t.projects.title}</h2>
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(400px, 1fr))', gap: '3rem' }}>
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 320px), 1fr))', gap: '3rem' }}>
         {t.projects.items.map((project, index) => (
           <div key={index} className="card" style={{ padding: 0, overflow: 'hidden' }}>
             <div style={{ position: 'relative', height: '250px', width: '100%' }}>

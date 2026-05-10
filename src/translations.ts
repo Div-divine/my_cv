@@ -281,7 +281,7 @@ export const translations = {
       ],
 
       languages: [
-        { name: 'English', level: 'Professional' },
+        { name: 'English', level: 'Native' },
         { name: 'French', level: 'Professional' },
         { name: 'Igbo', level: 'Native' },
         { name: 'Ewe', level: 'Fluent' },
@@ -605,7 +605,7 @@ export const translations = {
       ],
 
       languages: [
-        { name: 'Anglais', level: 'Professionnel' },
+        { name: 'Anglais', level: 'Langue Maternelle' },
         { name: 'Français', level: 'Professionnel' },
         { name: 'Igbo', level: 'Langue Maternelle' },
         { name: 'Ewe', level: 'Courant' },
