@@ -16,13 +16,13 @@ export const translations = {
       role: 'Full Stack Developer',
       tagline: 'Backend Systems • Scalable APIs • Authentication • Modern Frontend Architecture',
       description:
-        'Full stack developer with professional software development experience and strong production expertise in designing and maintaining scalable applications using Symfony, Node.js, Vue.js, and Next.js. Focused on secure backend architecture, high-performance APIs, and seamless user experiences.',
+        'As an experienced Full Stack Developer, I leverage a strong background in production environments to design robust backend systems, intuitive frontend architectures, and seamless deployment workflows.',
     },
 
     about: {
       title: 'Professional Profile',
-      p1: 'Full stack developer with professional software development experience and strong production experience across backend systems, frontend architecture, authentication, APIs, and deployment workflows. Experienced in designing and maintaining scalable applications using <strong>Symfony, Node.js, Vue.js, Next.js, and PostgreSQL</strong>. Comfortable working across the complete software lifecycle including architecture, backend logic, security, deployment, and production maintenance.',
-      p2: 'Beyond software engineering, I bring several years of leadership, operational management, and business responsibility from entrepreneurship roles. This background strengthened my <strong>problem-solving, ownership, and decision-making abilities</strong> in professional environments. Currently expanding into cross-platform mobile development with <strong>Flutter</strong>.',
+      p1: 'As an experienced Full Stack Developer, I leverage a strong background in production environments to design robust backend systems, intuitive frontend architectures, and seamless deployment workflows. I master the complete software lifecycle, from API security to the maintenance of scalable applications using <strong>Symfony, Node.js, Next.js, and PostgreSQL</strong>.',
+      p2: 'My career is defined by several years of leadership and entrepreneurial responsibility, which has sharpened my decision-making skills and ability to solve complex problems. Driven by innovation, I am currently expanding my expertise into cross-platform mobile development with <strong>Flutter</strong> to provide comprehensive, multi-channel solutions.',
     },
 
     skills: {
@@ -181,7 +181,7 @@ export const translations = {
     pdf: {
       profileTitle: 'Professional Profile',
       profileSummary:
-        'Full stack developer with professional software development experience and strong production experience across backend systems, frontend architecture, authentication, APIs, and deployment workflows. Expert in designing scalable applications using Symfony, Node.js, Next.js, and PostgreSQL. Comfortable working across the complete software lifecycle including architecture, security, and production maintenance. Brings several years of leadership and business responsibility from entrepreneurship roles, strengthening problem-solving and decision-making abilities. Currently expanding into cross-platform mobile development with Flutter.',
+        'As an experienced Full Stack Developer, I leverage a strong background to design robust backend systems, intuitive frontend architectures, and seamless deployment workflows. I master the complete software lifecycle, from API security to the maintenance of scalable applications using Symfony, Node.js, Next.js, and PostgreSQL. My career is defined by several years of leadership and entrepreneurial responsibility, which has sharpened my decision-making skills and ability to solve complex problems. Driven by innovation, I am currently expanding my expertise into cross-platform mobile development with Flutter to provide comprehensive, multi-channel solutions.',
       experienceTitle: 'Professional Experience',
       skillsTitle: 'Core Technical Skills',
       leadershipTitle: 'Leadership & Business',
@@ -340,13 +340,13 @@ export const translations = {
       role: 'Développeur Full Stack',
       tagline: 'Systèmes Backend • APIs Scalables • Authentification • Architecture Frontend Moderne',
       description:
-        'Développeur full stack avec une expérience professionnelle en développement logiciel et une solide expertise en production dans la conception et la maintenance d\'applications scalables avec Symfony, Node.js, Vue.js et Next.js. Spécialisé dans l\'architecture backend sécurisée, les APIs performantes et les expériences utilisateur fluides.',
+        'Développeur Full Stack expérimenté, je m\'appuie sur une solide pratique pour concevoir des systèmes backend robustes, des architectures frontend intuitives et des workflows de déploiement fluides.',
     },
 
     about: {
       title: 'Profil Professionnel',
-      p1: 'Développeur full stack avec une expérience professionnelle en développement logiciel et une solide expérience en production dans les systèmes backend, l\'architecture frontend, l\'authentification, les APIs et les workflows de déploiement. Expérimenté dans la conception et la maintenance d\'applications scalables avec <strong>Symfony, Node.js, Vue.js, Next.js et PostgreSQL</strong>. À l\'aise sur l\'ensemble du cycle de vie logiciel, incluant l\'architecture, la logique backend, la sécurité, le déploiement et la maintenance en production.',
-      p2: 'Au-delà de l\'ingénierie logicielle, j\'apporte plusieurs années de leadership, de gestion opérationnelle et de responsabilité entrepreneuriale. Cette expérience a renforcé mes capacités de <strong>résolution de problèmes, de prise de responsabilité et de prise de décision</strong> en environnement professionnel. Actuellement en expansion vers le développement mobile multiplateforme avec <strong>Flutter</strong>.',
+      p1: 'Développeur Full Stack expérimenté, je m\'appuie sur une solide pratique pour concevoir des systèmes backend robustes, des architectures frontend intuitives et des workflows de déploiement fluides. Je maîtrise l\'intégralité du cycle de vie logiciel, de la sécurisation des API à la maintenance d\'applications scalables avec <strong>Symfony, Node.js, Next.js et PostgreSQL</strong>.',
+      p2: 'Mon parcours est marqué par plusieurs années de leadership et de responsabilité entrepreneuriale, ce qui a affûté mon sens de la décision et ma capacité à résoudre des problèmes complexes. Toujours tourné vers l\'innovation, j\'étends actuellement mon expertise au développement mobile multiplateforme avec <strong>Flutter</strong> pour offrir des solutions toujours plus transversales.',
     },
 
     skills: {
@@ -505,7 +505,7 @@ export const translations = {
     pdf: {
       profileTitle: 'Profil Professionnel',
       profileSummary:
-        'Développeur full stack avec une expérience professionnelle en développement logiciel et une solide expérience en production dans les systèmes backend, l\'architecture frontend, l\'authentification, les APIs et les workflows de déploiement. Expert dans la conception d\'applications scalables avec Symfony, Node.js, Next.js et PostgreSQL. À l\'aise sur l\'ensemble du cycle de vie logiciel, incluant l\'architecture, la sécurité et la maintenance en production. Apporte plusieurs années de leadership et de responsabilité entrepreneuriale, renforçant les capacités de résolution de problèmes et de prise de décision. Actuellement en expansion vers le développement mobile multiplateforme avec Flutter.',
+        'Développeur Full Stack expérimenté, je m\'appuie sur une solide pratique pour concevoir des systèmes backend robustes, des architectures frontend intuitives et des workflows de déploiement fluides. Je maîtrise l\'intégralité du cycle de vie logiciel, de la sécurisation des API à la maintenance d\'applications scalables avec Symfony, Node.js, Next.js et PostgreSQL. Mon parcours est marqué par plusieurs années de leadership et de responsabilité entrepreneuriale, ce qui a affûté mon sens de la décision et ma capacité à résoudre des problèmes complexes. Toujours tourné vers l\'innovation, j\'étends actuellement mon expertise au développement mobile multiplateforme avec Flutter pour offrir des solutions toujours plus transversales.',
       experienceTitle: 'Expérience Professionnelle',
       skillsTitle: 'Compétences Techniques',
       leadershipTitle: 'Leadership & Entrepreneuriat',
