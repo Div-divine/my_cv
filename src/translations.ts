@@ -1,4 +1,4 @@
-export type Lang = 'en' | 'fr';
+export type Lang = 'fr' | 'en';
 
 export const translations = {
   en: {
@@ -53,7 +53,7 @@ export const translations = {
         {
           role: 'Full Stack Developer',
           company: 'IF Technologies - France',
-          period: 'Jul 2024 - Present',
+          period: 'September 2024 - Present',
           bullets: [
             'Develop and maintain production-grade full stack applications using Symfony, Vue.js, PostgreSQL, Node.js, and Tailwind CSS',
             'Design backend systems including APIs, authentication flows, and database architecture',
@@ -195,7 +195,7 @@ export const translations = {
         {
           role: 'Full Stack Developer',
           company: 'IF Technologies - France',
-          period: 'July 2024 - Present',
+          period: 'September 2024 - Present',
           bullets: [
             'Develop and maintain production-grade full stack applications using Symfony, Vue.js, PostgreSQL, Node.js, and Tailwind CSS',
             'Design backend systems including APIs, authentication flows, and database architecture',
@@ -377,7 +377,7 @@ export const translations = {
         {
           role: 'Développeur Full Stack',
           company: 'IF Technologies - France',
-          period: 'Juil. 2024 - Présent',
+          period: 'Septembre 2024 - Présent',
           bullets: [
             'Développement et maintenance d\'applications full stack en production avec Symfony, Vue.js, PostgreSQL, Node.js et Tailwind CSS',
             'Conception de systèmes backend incluant APIs, flux d\'authentification et architecture de base de données',
@@ -519,7 +519,7 @@ export const translations = {
         {
           role: 'Développeur Full Stack',
           company: 'IF Technologies - France',
-          period: 'Juillet 2024 - Présent',
+          period: 'Septembre 2024 - Présent',
           bullets: [
             'Développement et maintenance d\'applications full stack en production avec Symfony, Vue.js, PostgreSQL, Node.js et Tailwind CSS',
             'Conception de systèmes backend incluant APIs, flux d\'authentification et architecture de base de données',
