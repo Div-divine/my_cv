@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { Page, Text, View, Document, StyleSheet, Font, Svg, Path, Image } from '@react-pdf/renderer';
+import { Page, Text, View, Document, StyleSheet, Font, Svg, Path, Image, Link } from '@react-pdf/renderer';
 import { translations, Lang } from '@/translations';
 
 Font.register({
@@ -388,6 +388,12 @@ const CVDocument = ({ lang = 'en' }: { lang?: Lang }) => {
               <View style={s.contactItem}>
                 <Icon d={I.github} size={9} color={C.gold} />
                 <Text style={s.contactLabel}>github.com/Div-divine</Text>
+              </View>
+              <View style={s.contactItem}>
+                <Icon d={I.globe} size={9} color={C.gold} />
+                <Link src="https://cv-divine-osuu-full-stack-developer.vercel.app/" style={s.contactLabel}>
+                  cv-divine-osuu-full-stack-developer.vercel.app
+                </Link>
               </View>
             </View>
           </View>

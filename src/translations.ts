@@ -22,7 +22,7 @@ export const translations = {
     about: {
       title: 'Professional Profile',
       p1: 'As an experienced Full Stack Developer, I leverage a strong background in production environments to design robust backend systems, intuitive frontend architectures, and seamless deployment workflows. I master the complete software lifecycle, from API security to the maintenance of scalable applications using <strong>Symfony, Node.js, Next.js, and PostgreSQL</strong>.',
-      p2: 'My career is defined by several years of leadership and entrepreneurial responsibility, which has sharpened my decision-making skills and ability to solve complex problems. Driven by innovation, I am currently expanding my expertise into cross-platform mobile development with <strong>Flutter</strong> to provide comprehensive, multi-channel solutions.',
+      p2: 'My career is defined by several years of leadership and entrepreneurial responsibility, which has sharpened my decision-making skills and ability to solve complex problems. Driven by innovation, I continuously expand my expertise to provide comprehensive, multi-channel solutions.',
     },
 
     skills: {
@@ -43,7 +43,7 @@ export const translations = {
         databases: ['PostgreSQL', 'MySQL', 'Relational Modeling', 'Query Optimization', 'Docker', 'Git / GitHub Workflows', 'Vercel', 'AWS (EC2, S3)'],
         cms: ['WordPress', 'Elementor', 'Headless CMS', 'Prismic CMS', 'Custom Theme Development'],
         docs: ['Swagger / OpenAPI', 'Nelmio API Doc', 'GitBook'],
-        mobile: ['Flutter (Learning)', 'Dart'],
+        mobile: ['React Native', 'JavaScript'],
       },
     },
 
@@ -52,7 +52,7 @@ export const translations = {
       jobs: [
         {
           role: 'Full Stack Developer',
-          company: 'IF Technologies - France',
+          company: 'IF Technologies',
           period: 'September 2024 - Present',
           bullets: [
             'Develop and maintain production-grade full stack applications using Symfony, Vue.js, PostgreSQL, Node.js, and Tailwind CSS',
@@ -64,25 +64,28 @@ export const translations = {
           ],
         },
         {
-          role: 'Web Developer Intern',
-          company: 'PIC DIGITAL - Bidart, France',
-          period: 'Apr 2024 - Jun 2024',
+          role: 'Freelance Full Stack Developer',
+          company: '',
+          period: '2022 - Present',
           bullets: [
-            'Developed frontend and backend tasks using Next.js and Express.js',
-            'Implemented unit testing and CI/CD integration to ensure robust production deployment',
-            'Contributed to responsive UI implementation and frontend improvements',
-            'Participated in hosting configuration and deployment tasks',
+            'Development of web solutions for client projects and needs, from conception to production.',
+            'Frontend and backend development',
+            'Design and integration of APIs',
+            'Development of modern and responsive web interfaces',
+            'Working with various JavaScript/PHP technologies and frameworks',
+            'Autonomous management of projects and technical requirements',
           ],
         },
         {
-          role: 'Freelance Full Stack Developer',
-          company: 'Remote | France',
-          period: '2022 - Present',
+          role: 'Full Stack Developer — Internship',
+          company: 'PIC DIGITAL',
+          period: 'April - June 2024',
           bullets: [
-            'Marion Poizeau Website: Initially designed with WordPress (2022); fully rebuilt and migrated to Next.js in April 2026 for production scalability',
-            'Timeo Coaching Platform: Designed and developed a full stack coaching platform using Next.js, Prismic CMS, GSAP, and Vercel',
-            'Provide ongoing maintenance, security updates, and performance optimization for both platforms',
-            'Managed deployment workflows, SEO optimization, and production updates',
+            'Internship completed as part of my Full Stack Developer training at GRETA-CFA Aquitaine.',
+            'Participation in web application development',
+            'Frontend and backend development',
+            'Collaboration with the development team',
+            'Practical application of skills acquired during training',
           ],
         },
       ],
@@ -92,9 +95,9 @@ export const translations = {
       title: 'Leadership & Business Experience',
       roles: [
         {
-          role: 'Manager',
-          company: 'BIATA COMPANIES - Lagos, Nigeria',
-          period: '2018 - 2022',
+          role: 'Manager & Team Leader',
+          company: 'BIATA COMPANIES & BIATA Ayo Ventures - Lagos, Nigeria',
+          period: '2016 - 2022',
           bullets: [
             'Managed company operations and supervised multidisciplinary teams',
             'Oversaw technical support services and operational workflows',
@@ -103,21 +106,11 @@ export const translations = {
           ],
         },
         {
-          role: 'Team Leader',
-          company: 'BIATA Ayo Ventures - Lagos, Nigeria',
-          period: '2016 - 2019',
-          bullets: [
-            'Managed technical support operations and company equipment',
-            'Supervised operational teams and workflow execution',
-            'Maintained high operational standards and client satisfaction',
-          ],
-        },
-        {
-          role: 'Business Owner',
+          role: 'Founder & Business Owner',
           company: 'Maggy-nificent Enterprise',
-          period: '2020 - Present',
+          period: '2022 - Present',
           bullets: [
-            'Managed business operations, logistics, and financial activities',
+            'Founded and managed business operations, logistics, and financial activities',
             'Oversaw accounting, payments, and supplier coordination',
             'Handled operational decision-making and business administration',
           ],
@@ -138,29 +131,31 @@ export const translations = {
           description:
             'Built a full-stack coaching platform with dynamic content management. I manage ongoing maintenance and security optimization.',
         },
+        {
+          title: 'Amandine Mauries Website',
+          description:
+            'Professional website built with WordPress CMS, Elementor page builder, and optimized with Yoast SEO. Integrated Google Analytics, Tag Manager, and Complianz for cookie compliance.',
+        },
       ],
       flutter:
         'Currently developing a cross-platform mobile application focused on mobile architecture, API integration, state management, and responsive UI systems.',
-      flutterTitle: 'Flutter Application',
+      flutterTitle: 'React Native Application',
     },
 
     education: {
       title: 'Education',
       items: [
         {
-          title: 'Full Stack Developer - Level 5 Technical Professional (BAC+2)',
-          institution: 'GRETA-CFA Aquitaine - Bayonne, France',
+          title: 'Full Stack Developer — Professional Title Level 5',
+          institution: 'GRETA-CFA Aquitaine',
           year: '2023 - 2024',
+          description: '',
         },
         {
-          title: 'Back-End Development with Python, SQL & DevOps',
-          institution: 'Nucamp Coding Bootcamp - USA (Remote)',
+          title: 'Full Stack Web Development',
+          institution: 'Nucamp Coding Bootcamp',
           year: '2022',
-        },
-        {
-          title: 'Scientific Baccalaureate',
-          institution: 'Emmaüs High School - Lomé, Togo',
-          year: '2016',
+          description: 'Obtained title and began professional freelance activity.',
         },
       ],
     },
@@ -168,6 +163,7 @@ export const translations = {
     footer: {
       role: 'Full Stack Developer',
       rights: 'All rights reserved.',
+      website: 'https://cv-divine-osuu-full-stack-developer.vercel.app/',
     },
 
     download: {
@@ -181,7 +177,7 @@ export const translations = {
     pdf: {
       profileTitle: 'Professional Profile',
       profileSummary:
-        'As an experienced Full Stack Developer, I leverage a strong background to design robust backend systems, intuitive frontend architectures, and seamless deployment workflows. I master the complete software lifecycle, from API security to the maintenance of scalable applications using Symfony, Node.js, Next.js, and PostgreSQL. My career is defined by several years of leadership and entrepreneurial responsibility, which has sharpened my decision-making skills and ability to solve complex problems. Driven by innovation, I am currently expanding my expertise into cross-platform mobile development with Flutter to provide comprehensive, multi-channel solutions.',
+        'As an experienced Full Stack Developer, I leverage a strong background to design robust backend systems, intuitive frontend architectures, and seamless deployment workflows. I master the complete software lifecycle, from API security to the maintenance of scalable applications using Symfony, Node.js, Next.js, and PostgreSQL. My career is defined by several years of leadership and entrepreneurial responsibility, which has sharpened my decision-making skills and ability to solve complex problems. Driven by innovation, I continuously expand my expertise to provide comprehensive, multi-channel solutions.',
       experienceTitle: 'Professional Experience',
       skillsTitle: 'Core Technical Skills',
       leadershipTitle: 'Leadership & Business',
@@ -194,7 +190,7 @@ export const translations = {
       jobs: [
         {
           role: 'Full Stack Developer',
-          company: 'IF Technologies - France',
+          company: 'IF Technologies',
           period: 'September 2024 - Present',
           bullets: [
             'Develop and maintain production-grade full stack applications using Symfony, Vue.js, PostgreSQL, Node.js, and Tailwind CSS',
@@ -206,34 +202,37 @@ export const translations = {
           ],
         },
         {
-          role: 'Web Developer Intern',
-          company: 'PIC DIGITAL - Bidart, France',
-          period: 'April - June 2024',
+          role: 'Freelance Full Stack Developer',
+          company: '',
+          period: '2022 - Present',
           bullets: [
-            'Developed frontend and backend tasks using Next.js and Express.js',
-            'Implemented unit testing and CI/CD integration for robust production deployment',
-            'Contributed to responsive UI implementation and frontend improvements',
-            'Participated in hosting configuration and deployment tasks',
+            'Development of web solutions for client projects and needs, from conception to production.',
+            'Frontend and backend development',
+            'Design and integration of APIs',
+            'Development of modern and responsive web interfaces',
+            'Working with various JavaScript/PHP technologies and frameworks',
+            'Autonomous management of projects and technical requirements',
           ],
         },
         {
-          role: 'Freelance Full Stack Developer',
-          company: 'Remote - France',
-          period: '2022 - Present',
+          role: 'Full Stack Developer — Internship',
+          company: 'PIC DIGITAL',
+          period: 'April - June 2024',
           bullets: [
-            'Marion Poizeau Website: Initially developed with WordPress (2022); fully rebuilt using Next.js in April 2026 for production scalability',
-            'Timeo Coaching Platform: Designed and developed a full stack coaching platform using Next.js, Prismic CMS, GSAP, and Vercel',
-            'Provide ongoing maintenance, security updates, and performance optimization for both platforms',
-            'Managed deployment workflows, SEO optimization, and production updates',
+            'Internship completed as part of my Full Stack Developer training at GRETA-CFA Aquitaine.',
+            'Participation in web application development',
+            'Frontend and backend development',
+            'Collaboration with the development team',
+            'Practical application of skills acquired during training',
           ],
         },
       ],
 
       leadershipRoles: [
         {
-          role: 'Manager',
-          company: 'BIATA COMPANIES - Lagos, Nigeria',
-          period: '2018 - 2022',
+          role: 'Manager & Team Leader',
+          company: 'BIATA COMPANIES & BIATA Ayo Ventures - Lagos, Nigeria',
+          period: '2016 - 2022',
           bullets: [
             'Managed company operations and supervised multidisciplinary teams',
             'Oversaw technical support services and operational workflows',
@@ -241,21 +240,11 @@ export const translations = {
           ],
         },
         {
-          role: 'Team Leader',
-          company: 'BIATA Ayo Ventures - Lagos, Nigeria',
-          period: '2016 - 2019',
-          bullets: [
-            'Managed technical support operations and company equipment',
-            'Supervised operational teams and workflow execution',
-            'Maintained high operational standards and client satisfaction',
-          ],
-        },
-        {
-          role: 'Business Owner',
+          role: 'Founder & Business Owner',
           company: 'Maggy-nificent Enterprise',
-          period: '2020 - Present',
+          period: '2022 - Present',
           bullets: [
-            'Managed business operations, logistics, and financial activities',
+            'Founded and managed business operations, logistics, and financial activities',
             'Oversaw accounting, payments, and supplier coordination',
             'Handled operational decision-making and business administration',
           ],
@@ -264,19 +253,16 @@ export const translations = {
 
       educationItems: [
         {
-          title: 'Full Stack Developer - Level 5 Technical Professional (BAC+2)',
-          institution: 'GRETA-CFA Aquitaine - Bayonne, France',
+          title: 'Full Stack Developer — Professional Title Level 5',
+          institution: 'GRETA-CFA Aquitaine',
           year: '2023 - 2024',
+          description: '',
         },
         {
-          title: 'Back-End Development',
-          institution: 'Nucamp Coding Bootcamp - USA (Remote)',
+          title: 'Full Stack Web Development',
+          institution: 'Nucamp Coding Bootcamp',
           year: '2022',
-        },
-        {
-          title: 'Scientific Baccalaureate',
-          institution: 'Emmaüs High School - Lomé, Togo',
-          year: '2016',
+          description: 'Obtained title and began professional freelance activity.',
         },
       ],
 
@@ -299,7 +285,12 @@ export const translations = {
           desc: 'Full stack platform with Prismic CMS, GSAP animations, and Vercel deployment.',
         },
         {
-          name: 'Flutter Application',
+          name: 'Amandine Mauries Website',
+          url: 'amandinemauries.fr',
+          desc: 'WordPress CMS with Elementor, Yoast SEO, Google Analytics, and Complianz cookie compliance.',
+        },
+        {
+          name: 'React Native Application',
           url: '',
           desc: 'Cross-platform mobile app - architecture, API integration, and state management.',
         },
@@ -318,7 +309,7 @@ export const translations = {
         databasesDevops: ['PostgreSQL', 'MySQL', 'Docker', 'Git', 'Vercel', 'AWS (EC2, S3)', 'CI/CD'],
         documentation: ['Swagger / OpenAPI', 'Nelmio API Doc', 'GitBook'],
         frontendUi: ['Next.js', 'React', 'Vue.js', 'Tailwind CSS', 'PrimeVue', 'PrimeFlex', 'GSAP', 'Responsive Design'],
-        cmsMobile: ['WordPress', 'Prismic CMS', 'Headless CMS', 'Flutter', 'Dart'],
+        cmsMobile: ['WordPress', 'Prismic CMS', 'Headless CMS', 'React Native', 'JavaScript'],
       },
 
       docTitle: 'Divine Osuu - Full Stack Developer CV',
@@ -346,7 +337,7 @@ export const translations = {
     about: {
       title: 'Profil Professionnel',
       p1: 'Développeur Full Stack expérimenté, je m\'appuie sur une solide pratique pour concevoir des systèmes backend robustes, des architectures frontend intuitives et des workflows de déploiement fluides. Je maîtrise l\'intégralité du cycle de vie logiciel, de la sécurisation des API à la maintenance d\'applications scalables avec <strong>Symfony, Node.js, Next.js et PostgreSQL</strong>.',
-      p2: 'Mon parcours est marqué par plusieurs années de leadership et de responsabilité entrepreneuriale, ce qui a affûté mon sens de la décision et ma capacité à résoudre des problèmes complexes. Toujours tourné vers l\'innovation, j\'étends actuellement mon expertise au développement mobile multiplateforme avec <strong>Flutter</strong> pour offrir des solutions toujours plus transversales.',
+      p2: 'Mon parcours est marqué par plusieurs années de leadership et de responsabilité entrepreneuriale, ce qui a affûté mon sens de la décision et ma capacité à résoudre des problèmes complexes. Toujours tourné vers l\'innovation, j\'étends continuellement mon expertise pour offrir des solutions toujours plus transversales.',
     },
 
     skills: {
@@ -367,7 +358,7 @@ export const translations = {
         databases: ['PostgreSQL', 'MySQL', 'Modélisation Relationnelle', 'Optimisation de Requêtes', 'Docker', 'Workflows Git / GitHub', 'Vercel', 'AWS (EC2, S3)'],
         cms: ['WordPress', 'Elementor', 'CMS Headless', 'Prismic CMS', 'Développement de Thème Personnalisé'],
         docs: ['Swagger / OpenAPI', 'Nelmio API Doc', 'GitBook'],
-        mobile: ['Flutter (Apprentissage)', 'Dart'],
+        mobile: ['React Native', 'JavaScript'],
       },
     },
 
@@ -376,8 +367,8 @@ export const translations = {
       jobs: [
         {
           role: 'Développeur Full Stack',
-          company: 'IF Technologies - France',
-          period: 'Septembre 2024 - Présent',
+          company: 'IF Technologies',
+          period: 'Septembre 2024 - Aujourd\'hui',
           bullets: [
             'Développement et maintenance d\'applications full stack en production avec Symfony, Vue.js, PostgreSQL, Node.js et Tailwind CSS',
             'Conception de systèmes backend incluant APIs, flux d\'authentification et architecture de base de données',
@@ -388,25 +379,28 @@ export const translations = {
           ],
         },
         {
-          role: 'Développeur Web Stagiaire',
-          company: 'PIC DIGITAL - Bidart, France',
-          period: 'Avr. 2024 - Juin 2024',
+          role: 'Développeur Full Stack Freelance',
+          company: '',
+          period: '2022 - Aujourd\'hui',
           bullets: [
-            'Développement de tâches frontend et backend avec Next.js et Express.js',
-            'Implémentation de tests unitaires et intégration CI/CD pour un déploiement en production robuste',
-            'Contribution à l\'implémentation d\'UI responsive et améliorations frontend',
-            'Participation à la configuration d\'hébergement et aux tâches de déploiement',
+            'Développement de solutions web pour des projets et besoins clients, de la conception à la mise en production.',
+            'Développement frontend et backend',
+            'Conception et intégration d\'API',
+            'Développement d\'interfaces web modernes et responsives',
+            'Travail avec différentes technologies et frameworks JavaScript/PHP',
+            'Gestion autonome des projets et des besoins techniques',
           ],
         },
         {
-          role: 'Développeur Full Stack Freelance',
-          company: 'Télétravail | France',
-          period: '2022 - Présent',
+          role: 'Développeur Full Stack — Stage',
+          company: 'PIC DIGITAL',
+          period: 'Avril - Juin 2024',
           bullets: [
-            'Site Marion Poizeau : Conçu initialement avec WordPress (2022) ; entièrement reconstruit et migré vers Next.js en avril 2026 pour la scalabilité en production',
-            'Plateforme Timeo Coaching : Conception et développement d\'une plateforme de coaching full stack avec Next.js, Prismic CMS, GSAP et Vercel',
-            'Maintenance continue, mises à jour de sécurité et optimisation des performances pour les deux plateformes',
-            'Gestion des workflows de déploiement, optimisation SEO et mises à jour en production',
+            'Stage réalisé dans le cadre de ma formation Développeur Full Stack au GRETA-CFA Aquitaine.',
+            'Participation au développement d\'applications web',
+            'Développement frontend et backend',
+            'Collaboration avec l\'équipe de développement',
+            'Mise en pratique des compétences acquises en formation',
           ],
         },
       ],
@@ -416,9 +410,9 @@ export const translations = {
       title: 'Leadership & Expérience Entrepreneuriale',
       roles: [
         {
-          role: 'Responsable',
-          company: 'BIATA COMPANIES - Lagos, Nigeria',
-          period: '2018 - 2022',
+          role: 'Responsable & Chef d\'Équipe',
+          company: 'BIATA COMPANIES & BIATA Ayo Ventures - Lagos, Nigeria',
+          period: '2016 - 2022',
           bullets: [
             'Gestion des opérations et supervision d\'équipes pluridisciplinaires',
             'Supervision des services de support technique et des workflows opérationnels',
@@ -427,21 +421,11 @@ export const translations = {
           ],
         },
         {
-          role: 'Chef d\'Équipe',
-          company: 'BIATA Ayo Ventures - Lagos, Nigeria',
-          period: '2016 - 2019',
-          bullets: [
-            'Gestion des opérations de support technique et des équipements',
-            'Supervision des équipes opérationnelles et de l\'exécution des workflows',
-            'Maintien de standards opérationnels élevés et satisfaction client',
-          ],
-        },
-        {
-          role: 'Chef d\'Entreprise',
+          role: 'Fondateur & Chef d\'Entreprise',
           company: 'Maggy-nificent Enterprise',
-          period: '2020 - Présent',
+          period: '2022 - Présent',
           bullets: [
-            'Gestion des opérations commerciales, de la logistique et des activités financières',
+            'Fondé et géré les opérations commerciales, la logistique et les activités financières',
             'Supervision de la comptabilité, des paiements et de la coordination fournisseurs',
             'Prise de décisions opérationnelles et administration de l\'entreprise',
           ],
@@ -462,29 +446,31 @@ export const translations = {
           description:
             'Plateforme de coaching full stack avec gestion de contenu dynamique. J\'assure la maintenance continue et l\'optimisation de la sécurité.',
         },
+        {
+          title: 'Site Amandine Mauries',
+          description:
+            'Site professionnel construit avec WordPress CMS, Elementor et optimisé avec Yoast SEO. Intégration de Google Analytics, Tag Manager et Complianz pour la conformité cookies.',
+        },
       ],
       flutter:
         'Développement en cours d\'une application mobile multiplateforme axée sur l\'architecture mobile, l\'intégration API, la gestion d\'état et les systèmes d\'UI responsive.',
-      flutterTitle: 'Application Flutter',
+      flutterTitle: 'Application React Native',
     },
 
     education: {
       title: 'Formation',
       items: [
         {
-          title: 'Développeur Full Stack - Titre Professionnel Niveau 5 (BAC+2)',
-          institution: 'GRETA-CFA Aquitaine - Bayonne, France',
+          title: 'Développeur Full Stack — Titre Professionnel Niveau 5',
+          institution: 'GRETA-CFA Aquitaine',
           year: '2023 - 2024',
+          description: '',
         },
         {
-          title: 'Développement Back-End avec Python, SQL & DevOps',
-          institution: 'Nucamp Coding Bootcamp - USA (À distance)',
+          title: 'Full Stack Web Development',
+          institution: 'Nucamp Coding Bootcamp',
           year: '2022',
-        },
-        {
-          title: 'Baccalauréat Scientifique',
-          institution: 'Lycée Emmaüs - Lomé, Togo',
-          year: '2016',
+          description: 'Obtention du titre et début d\'activité professionnelle en freelance.',
         },
       ],
     },
@@ -492,6 +478,7 @@ export const translations = {
     footer: {
       role: 'Développeur Full Stack',
       rights: 'Tous droits réservés.',
+      website: 'https://cv-divine-osuu-full-stack-developer.vercel.app/',
     },
 
     download: {
@@ -505,7 +492,7 @@ export const translations = {
     pdf: {
       profileTitle: 'Profil Professionnel',
       profileSummary:
-        'Développeur Full Stack expérimenté, je m\'appuie sur une solide pratique pour concevoir des systèmes backend robustes, des architectures frontend intuitives et des workflows de déploiement fluides. Je maîtrise l\'intégralité du cycle de vie logiciel, de la sécurisation des API à la maintenance d\'applications scalables avec Symfony, Node.js, Next.js et PostgreSQL. Mon parcours est marqué par plusieurs années de leadership et de responsabilité entrepreneuriale, ce qui a affûté mon sens de la décision et ma capacité à résoudre des problèmes complexes. Toujours tourné vers l\'innovation, j\'étends actuellement mon expertise au développement mobile multiplateforme avec Flutter pour offrir des solutions toujours plus transversales.',
+        'Développeur Full Stack expérimenté, je m\'appuie sur une solide pratique pour concevoir des systèmes backend robustes, des architectures frontend intuitives et des workflows de déploiement fluides. Je maîtrise l\'intégralité du cycle de vie logiciel, de la sécurisation des API à la maintenance d\'applications scalables avec Symfony, Node.js, Next.js et PostgreSQL. Mon parcours est marqué par plusieurs années de leadership et de responsabilité entrepreneuriale, ce qui a affûté mon sens de la décision et ma capacité à résoudre des problèmes complexes. Toujours tourné vers l\'innovation, j\'étends continuellement mon expertise pour offrir des solutions toujours plus transversales.',
       experienceTitle: 'Expérience Professionnelle',
       skillsTitle: 'Compétences Techniques',
       leadershipTitle: 'Leadership & Entrepreneuriat',
@@ -518,46 +505,49 @@ export const translations = {
       jobs: [
         {
           role: 'Développeur Full Stack',
-          company: 'IF Technologies - France',
-          period: 'Septembre 2024 - Présent',
+          company: 'IF Technologies',
+          period: 'Septembre 2024 - Aujourd\'hui',
           bullets: [
             'Développement et maintenance d\'applications full stack en production avec Symfony, Vue.js, PostgreSQL, Node.js et Tailwind CSS',
             'Conception de systèmes backend incluant APIs, flux d\'authentification et architecture de base de données',
             'Implémentation de systèmes d\'authentification avec JWT, RBAC et LemonLDAP::NG',
             'Création et maintenance de la documentation API avec Swagger, Nelmio et GitBook',
-            'Participation aux discussions d\'architecture, planification technique et décisions de feuille de route',
+            'Participation aux discussions d\'architecture, à la planification technique et aux décisions de feuille de route',
             'Travail direct avec les clients pour analyser les besoins et définir les solutions techniques',
           ],
         },
         {
-          role: 'Développeur Web Stagiaire',
-          company: 'PIC DIGITAL - Bidart, France',
-          period: 'Avril - Juin 2024',
+          role: 'Développeur Full Stack Freelance',
+          company: '',
+          period: '2022 - Aujourd\'hui',
           bullets: [
-            'Développement de tâches frontend et backend avec Next.js et Express.js',
-            'Implémentation de tests unitaires et intégration CI/CD pour un déploiement en production robuste',
-            'Contribution à l\'implémentation d\'UI responsive et améliorations frontend',
-            'Participation à la configuration d\'hébergement et aux tâches de déploiement',
+            'Développement de solutions web pour des projets et besoins clients, de la conception à la mise en production.',
+            'Développement frontend et backend',
+            'Conception et intégration d\'API',
+            'Développement d\'interfaces web modernes et responsives',
+            'Travail avec différentes technologies et frameworks JavaScript/PHP',
+            'Gestion autonome des projets et des besoins techniques',
           ],
         },
         {
-          role: 'Développeur Full Stack Freelance',
-          company: 'Télétravail - France',
-          period: '2022 - Présent',
+          role: 'Développeur Full Stack — Stage',
+          company: 'PIC DIGITAL',
+          period: 'Avril - Juin 2024',
           bullets: [
-            'Site Marion Poizeau : Développé initialement avec WordPress (2022) ; entièrement reconstruit avec Next.js en avril 2026 pour la scalabilité en production',
-            'Plateforme Timeo Coaching : Conception et développement d\'une plateforme de coaching full stack avec Next.js, Prismic CMS, GSAP et Vercel',
-            'Maintenance continue, mises à jour de sécurité et optimisation des performances pour les deux plateformes',
-            'Gestion des workflows de déploiement, optimisation SEO et mises à jour en production',
+            'Stage réalisé dans le cadre de ma formation Développeur Full Stack au GRETA-CFA Aquitaine.',
+            'Participation au développement d\'applications web',
+            'Développement frontend et backend',
+            'Collaboration avec l\'équipe de développement',
+            'Mise en pratique des compétences acquises en formation',
           ],
         },
       ],
 
       leadershipRoles: [
         {
-          role: 'Responsable',
-          company: 'BIATA COMPANIES - Lagos, Nigeria',
-          period: '2018 - 2022',
+          role: 'Responsable & Chef d\'Équipe',
+          company: 'BIATA COMPANIES & BIATA Ayo Ventures - Lagos, Nigeria',
+          period: '2016 - 2022',
           bullets: [
             'Gestion des opérations et supervision d\'équipes pluridisciplinaires',
             'Supervision des services de support technique et des workflows opérationnels',
@@ -565,21 +555,11 @@ export const translations = {
           ],
         },
         {
-          role: 'Chef d\'Équipe',
-          company: 'BIATA Ayo Ventures - Lagos, Nigeria',
-          period: '2016 - 2019',
-          bullets: [
-            'Gestion des opérations de support technique et des équipements',
-            'Supervision des équipes opérationnelles et de l\'exécution des workflows',
-            'Maintien de standards opérationnels élevés et satisfaction client',
-          ],
-        },
-        {
-          role: 'Chef d\'Entreprise',
+          role: 'Fondateur & Chef d\'Entreprise',
           company: 'Maggy-nificent Enterprise',
-          period: '2020 - Présent',
+          period: '2022 - Présent',
           bullets: [
-            'Gestion des opérations commerciales, de la logistique et des activités financières',
+            'Fondé et géré les opérations commerciales, la logistique et les activités financières',
             'Supervision de la comptabilité, des paiements et de la coordination fournisseurs',
             'Prise de décisions opérationnelles et administration de l\'entreprise',
           ],
@@ -588,19 +568,16 @@ export const translations = {
 
       educationItems: [
         {
-          title: 'Développeur Full Stack - Titre Professionnel Niveau 5 (BAC+2)',
-          institution: 'GRETA-CFA Aquitaine - Bayonne, France',
+          title: 'Développeur Full Stack — Titre Professionnel Niveau 5',
+          institution: 'GRETA-CFA Aquitaine',
           year: '2023 - 2024',
+          description: '',
         },
         {
-          title: 'Développement Back-End',
-          institution: 'Nucamp Coding Bootcamp - USA (À distance)',
+          title: 'Full Stack Web Development',
+          institution: 'Nucamp Coding Bootcamp',
           year: '2022',
-        },
-        {
-          title: 'Baccalauréat Scientifique',
-          institution: 'Lycée Emmaüs - Lomé, Togo',
-          year: '2016',
+          description: 'Obtention du titre et début d\'activité professionnelle en freelance.',
         },
       ],
 
@@ -623,7 +600,12 @@ export const translations = {
           desc: 'Plateforme full stack avec Prismic CMS, animations GSAP et déploiement Vercel.',
         },
         {
-          name: 'Application Flutter',
+          name: 'Site Amandine Mauries',
+          url: 'amandinemauries.fr',
+          desc: 'WordPress CMS avec Elementor, Yoast SEO, Google Analytics et Complianz conformité cookies.',
+        },
+        {
+          name: 'Application React Native',
           url: '',
           desc: 'Application mobile multiplateforme - architecture, intégration API et gestion d\'état.',
         },
@@ -642,7 +624,7 @@ export const translations = {
         databasesDevops: ['PostgreSQL', 'MySQL', 'Docker', 'Git', 'Vercel', 'AWS (EC2, S3)', 'CI/CD'],
         documentation: ['Swagger / OpenAPI', 'Nelmio API Doc', 'GitBook'],
         frontendUi: ['Next.js', 'React', 'Vue.js', 'Tailwind CSS', 'PrimeVue', 'PrimeFlex', 'GSAP', 'Design Réactif'],
-        cmsMobile: ['WordPress', 'Prismic CMS', 'CMS Headless', 'Flutter', 'Dart'],
+        cmsMobile: ['WordPress', 'Prismic CMS', 'CMS Headless', 'React Native', 'JavaScript'],
       },
 
       docTitle: 'Divine Osuu - Développeur Full Stack CV',

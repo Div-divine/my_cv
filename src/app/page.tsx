@@ -39,6 +39,24 @@ function HomeContent() {
             Divine <span style={{ color: 'var(--color-gold)' }}>Osuu</span>
           </h2>
           <p style={{ opacity: 0.7, marginBottom: '2rem' }}>{t.footer.role}</p>
+          <a 
+            href={t.footer.website} 
+            target="_blank" 
+            rel="noopener noreferrer"
+            style={{ 
+              display: 'inline-block',
+              color: 'var(--color-gold)', 
+              textDecoration: 'none',
+              marginBottom: '2rem',
+              fontSize: '1rem',
+              opacity: 0.8,
+              transition: 'opacity 0.3s'
+            }}
+            onMouseOver={(e) => e.currentTarget.style.opacity = '1'}
+            onMouseOut={(e) => e.currentTarget.style.opacity = '0.8'}
+          >
+            {t.footer.website}
+          </a>
           <div style={{ borderTop: '1px solid rgba(255,255,255,0.1)', paddingTop: '2rem', opacity: 0.5, fontSize: '0.9rem' }}>
             © {new Date().getFullYear()} Divine Osuu. {t.footer.rights}
           </div>

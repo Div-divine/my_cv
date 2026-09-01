@@ -25,6 +25,11 @@ const Education = () => {
               <h3 style={{ fontSize: '1.1rem', fontWeight: 700, marginBottom: '0.25rem' }}>{item.title}</h3>
               <p style={{ color: 'var(--color-primary)', fontWeight: 600, fontSize: '0.9rem' }}>{item.institution}</p>
               <p style={{ color: 'var(--color-gold)', fontWeight: 700, marginTop: '0.5rem' }}>{item.year}</p>
+              {item.description && (
+                <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem', marginTop: '0.5rem', lineHeight: '1.5' }}>
+                  {item.description}
+                </p>
+              )}
             </div>
           </div>
         ))}

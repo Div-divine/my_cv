@@ -6,8 +6,9 @@ import { ExternalLink } from 'lucide-react';
 import { useLanguage } from './LanguageContext';
 
 const projectLinks = [
-  { link: 'https://www.marionpoizeau.com/', image: '/marion.png', tags: ['Next.js', 'WordPress', 'SEO', 'Maintenance'] },
+  { link: 'https://www.marionpoizeau.com/', image: '/marion.png', tags: ['Next.js', 'WordPress', 'SEO', 'Maintenance', 'Framer Motion', 'Tailwind CSS', 'Versel Analytics'] },
   { link: 'https://www.timeocoaching.com/', image: '/timeo.png', tags: ['Next.js', 'Prismic CMS', 'GSAP', 'Maintenance'] },
+  { link: 'https://amandinemauries.fr/', image: '/amandine.png', tags: ['WordPress', 'Elementor', 'Yoast SEO', 'Google Analytics'] },
 ];
 
 const Projects = () => {
