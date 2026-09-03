@@ -422,13 +422,14 @@ const CVDocument = ({ lang = 'en' }: { lang?: Lang }) => {
           </View>
           <View style={{ flexDirection: 'row', gap: 16 }}>
             <View style={{ flex: 1 }}>
-              <SkillGroup label={t.skillCategories.backendAuth} skills={t.skillItems.backendAuth} />
-              <SkillGroup label={t.skillCategories.databasesDevops} skills={t.skillItems.databasesDevops} />
-              <SkillGroup label={t.skillCategories.documentation} skills={t.skillItems.documentation} />
+              <SkillGroup label={t.skillCategories.backend} skills={t.skillItems.backend} />
+              <SkillGroup label={t.skillCategories.databases} skills={t.skillItems.databases} />
+              <SkillGroup label={t.skillCategories.docs} skills={t.skillItems.docs} />
             </View>
             <View style={{ flex: 1 }}>
-              <SkillGroup label={t.skillCategories.frontendUi} skills={t.skillItems.frontendUi} />
-              <SkillGroup label={t.skillCategories.cmsMobile} skills={t.skillItems.cmsMobile} />
+              <SkillGroup label={t.skillCategories.frontend} skills={t.skillItems.frontend} />
+              <SkillGroup label={t.skillCategories.security} skills={t.skillItems.security} />
+              <SkillGroup label={t.skillCategories.mobile} skills={t.skillItems.mobile} />
             </View>
           </View>
 

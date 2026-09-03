@@ -14,36 +14,34 @@ export const translations = {
 
     hero: {
       role: 'Full Stack Developer',
-      tagline: 'Backend Systems • Scalable APIs • Authentication • Modern Frontend Architecture',
+      tagline: 'Symfony · PHP · Node.js · React · Next.js · Vue.js · PostgreSQL',
       description:
-        'As an experienced Full Stack Developer, I leverage a strong background in production environments to design robust backend systems, intuitive frontend architectures, and seamless deployment workflows.',
+        'Full Stack Developer with professional experience building and maintaining production web applications across backend, frontend, data, authentication, documentation, and deployment.',
     },
 
     about: {
       title: 'Professional Profile',
-      p1: 'As an experienced Full Stack Developer, I leverage a strong background in production environments to design robust backend systems, intuitive frontend architectures, and seamless deployment workflows. I master the complete software lifecycle, from API security to the maintenance of scalable applications using <strong>Symfony, Node.js, Next.js, and PostgreSQL</strong>.',
-      p2: 'My career is defined by several years of leadership and entrepreneurial responsibility, which has sharpened my decision-making skills and ability to solve complex problems. Driven by innovation, I continuously expand my expertise to provide comprehensive, multi-channel solutions.',
+      p1: 'Full Stack Developer with professional experience building and maintaining production web applications across backend, frontend, data, authentication, documentation, and deployment. Experienced with Symfony/PHP, Node.js, Vue.js, React/Next.js, PostgreSQL, Docker, AWS, Vercel, JWT, RBAC, SSO, and REST APIs. Comfortable translating client requirements into technical solutions, contributing to architecture decisions, and taking features from development through production. Additional experience leading teams and managing business operations brings strong ownership, communication, and decision-making skills.',
+      p2: '',
     },
 
     skills: {
-      title: 'Core Skills',
+      title: 'Technical Skills',
       categories: {
-        backend: 'Backend Engineering',
-        auth: 'Authentication & Security',
-        frontend: 'Frontend Engineering',
-        databases: 'Databases & DevOps',
-        cms: 'CMS & Content',
-        docs: 'Documentation',
-        mobile: 'Mobile Development',
+        backend: 'Backend',
+        frontend: 'Frontend',
+        security: 'Security',
+        databases: 'Data & DevOps',
+        docs: 'Documentation & CMS',
+        mobile: 'Mobile',
       },
       items: {
-        backend: ['Symfony (PHP)', 'Node.js', 'Express.js', 'REST API Architecture', 'Business Logic Design', 'Production Debugging', 'Secure Architecture'],
-        auth: ['JWT Authentication', 'Session-based Auth', 'OAuth2 / OIDC', 'RBAC (Role-Based Access Control)', 'SSO Implementation', 'LemonLDAP::NG', 'Secure Token Validation', 'OWASP Standards'],
-        frontend: ['Next.js', 'React.js', 'Vue.js', 'TypeScript', 'Tailwind CSS', 'PrimeVue', 'PrimeFlex', 'GSAP Animations', 'Component-driven Architecture'],
-        databases: ['PostgreSQL', 'MySQL', 'Relational Modeling', 'Query Optimization', 'Docker', 'Git / GitHub Workflows', 'Vercel', 'AWS (EC2, S3)'],
-        cms: ['WordPress', 'Elementor', 'Headless CMS', 'Prismic CMS', 'Custom Theme Development'],
-        docs: ['Swagger / OpenAPI', 'Nelmio API Doc', 'GitBook'],
-        mobile: ['React Native', 'JavaScript'],
+        backend: ['Symfony', 'PHP', 'Node.js', 'Express.js', 'REST APIs'],
+        frontend: ['JavaScript', 'React', 'Next.js', 'Vue.js', 'Tailwind CSS', 'PrimeVue', 'GSAP', 'responsive design'],
+        security: ['JWT', 'OAuth2', 'RBAC', 'SSO', 'LemonLDAP::NG'],
+        databases: ['PostgreSQL', 'MySQL', 'Docker', 'Git', 'Vercel', 'AWS EC2/S3', 'CI/CD'],
+        docs: ['Swagger/OpenAPI', 'Nelmio API Doc', 'GitBook', 'WordPress', 'Prismic CMS', 'headless CMS'],
+        mobile: ['React Native'],
       },
     },
 
@@ -53,39 +51,31 @@ export const translations = {
         {
           role: 'Full Stack Developer',
           company: 'IF Technologies',
-          period: 'September 2024 - Present',
+          period: 'September 2024 – Present',
           bullets: [
-            'Develop and maintain production-grade full stack applications using Symfony, Vue.js, PostgreSQL, Node.js, and Tailwind CSS',
-            'Design backend systems including APIs, authentication flows, and database architecture',
-            'Implement authentication systems using JWT, RBAC, and LemonLDAP::NG',
-            'Create and maintain API documentation using Swagger, Nelmio, and GitBook',
-            'Participate in architecture discussions, technical planning, and feature roadmap decisions',
-            'Work directly with clients to analyze requirements and define technical solutions',
+            'Develop and maintain production web applications using Symfony, Vue.js, Node.js, PostgreSQL, and Tailwind CSS.',
+            'Design and implement REST APIs, authentication flows, database structures, and backend services.',
+            'Implement secure access control with JWT, RBAC, and LemonLDAP::NG/SSO.',
+            'Create and maintain API documentation using Swagger/OpenAPI, Nelmio API Doc, and GitBook.',
+            'Contribute to architecture discussions, technical planning, roadmap decisions, and client requirement analysis.',
           ],
         },
         {
           role: 'Freelance Full Stack Developer',
           company: '',
-          period: '2022 - Present',
+          period: '2022 – Present',
           bullets: [
-            'Development of web solutions for client projects and needs, from conception to production.',
-            'Frontend and backend development',
-            'Design and integration of APIs',
-            'Development of modern and responsive web interfaces',
-            'Working with various JavaScript/PHP technologies and frameworks',
-            'Autonomous management of projects and technical requirements',
+            'Deliver web solutions from requirements and technical design through development, deployment, and maintenance.',
+            'Build responsive frontend interfaces, backend services, API integrations, and CMS-driven websites.',
+            'Manage projects independently, communicate with clients, and translate business needs into technical requirements.',
           ],
         },
         {
-          role: 'Full Stack Developer — Internship',
+          role: 'Full Stack Developer Intern',
           company: 'PIC DIGITAL',
-          period: 'April - June 2024',
+          period: 'April – June 2024',
           bullets: [
-            'Internship completed as part of my Full Stack Developer training at GRETA-CFA Aquitaine.',
-            'Participation in web application development',
-            'Frontend and backend development',
-            'Collaboration with the development team',
-            'Practical application of skills acquired during training',
+            'Contributed to web application development across frontend and backend tasks while collaborating with the development team. Used Next.js and Express.js.',
           ],
         },
       ],
@@ -119,27 +109,31 @@ export const translations = {
     },
 
     projects: {
-      title: 'Featured Professional Projects',
+      title: 'Selected Projects',
       items: [
         {
           title: 'Marion Poizeau Website',
           description:
-            'Initially developed with WordPress (2022); fully rebuilt using Next.js in April 2026. I provide ongoing technical maintenance and production updates.',
+            'Next.js rebuild, ongoing maintenance, and SEO optimization. Live website.',
         },
         {
           title: 'Timeo Coaching Platform',
           description:
-            'Built a full-stack coaching platform with dynamic content management. I manage ongoing maintenance and security optimization.',
+            'Full-stack platform using Prismic CMS, GSAP animations, and Vercel deployment. Live website.',
         },
         {
           title: 'Amandine Mauries Website',
           description:
-            'Professional website built with WordPress CMS, Elementor page builder, and optimized with Yoast SEO. Integrated Google Analytics, Tag Manager, and Complianz for cookie compliance.',
+            'WordPress, Elementor, Yoast SEO, Google Analytics, and Complianz cookie compliance. Live website.',
+        },
+        {
+          title: 'React Native Application',
+          description:
+            'Cross-platform mobile application involving architecture, API integration, and state management.',
         },
       ],
-      flutter:
-        'Currently developing a cross-platform mobile application focused on mobile architecture, API integration, state management, and responsive UI systems.',
-      flutterTitle: 'React Native Application',
+      flutter: '',
+      flutterTitle: '',
     },
 
     education: {
@@ -175,15 +169,15 @@ export const translations = {
     },
 
     pdf: {
-      profileTitle: 'Professional Profile',
+      profileTitle: 'Professional Summary',
       profileSummary:
-        'As an experienced Full Stack Developer, I leverage a strong background to design robust backend systems, intuitive frontend architectures, and seamless deployment workflows. I master the complete software lifecycle, from API security to the maintenance of scalable applications using Symfony, Node.js, Next.js, and PostgreSQL. My career is defined by several years of leadership and entrepreneurial responsibility, which has sharpened my decision-making skills and ability to solve complex problems. Driven by innovation, I continuously expand my expertise to provide comprehensive, multi-channel solutions.',
+        'Full Stack Developer with professional experience building and maintaining production web applications across backend, frontend, data, authentication, documentation, and deployment. Experienced with Symfony/PHP, Node.js, Vue.js, React/Next.js, PostgreSQL, Docker, AWS, Vercel, JWT, RBAC, SSO, and REST APIs. Comfortable translating client requirements into technical solutions, contributing to architecture decisions, and taking features from development through production. Additional experience leading teams and managing business operations brings strong ownership, communication, and decision-making skills.',
       experienceTitle: 'Professional Experience',
-      skillsTitle: 'Core Technical Skills',
-      leadershipTitle: 'Leadership & Business',
-      educationTitle: 'Education',
+      skillsTitle: 'Technical Skills',
+      leadershipTitle: 'Additional Leadership & Business Experience',
+      educationTitle: 'Education & Languages',
       languagesTitle: 'Languages',
-      projectsTitle: 'Featured Professional Projects',
+      projectsTitle: 'Selected Projects',
       footerLabel: 'Divine Osuu - Full Stack Developer',
       role: 'Full Stack Developer',
 
@@ -191,39 +185,31 @@ export const translations = {
         {
           role: 'Full Stack Developer',
           company: 'IF Technologies',
-          period: 'September 2024 - Present',
+          period: 'September 2024 – Present',
           bullets: [
-            'Develop and maintain production-grade full stack applications using Symfony, Vue.js, PostgreSQL, Node.js, and Tailwind CSS',
-            'Design backend systems including APIs, authentication flows, and database architecture',
-            'Implement authentication systems using JWT, RBAC, and LemonLDAP::NG',
-            'Create and maintain API documentation using Swagger, Nelmio, and GitBook',
-            'Participate in architecture discussions, technical planning, and feature roadmap decisions',
-            'Work directly with clients to analyze requirements and define technical solutions',
+            'Develop and maintain production web applications using Symfony, Vue.js, Node.js, PostgreSQL, and Tailwind CSS.',
+            'Design and implement REST APIs, authentication flows, database structures, and backend services.',
+            'Implement secure access control with JWT, RBAC, and LemonLDAP::NG/SSO.',
+            'Create and maintain API documentation using Swagger/OpenAPI, Nelmio API Doc, and GitBook.',
+            'Contribute to architecture discussions, technical planning, roadmap decisions, and client requirement analysis.',
           ],
         },
         {
           role: 'Freelance Full Stack Developer',
           company: '',
-          period: '2022 - Present',
+          period: '2022 – Present',
           bullets: [
-            'Development of web solutions for client projects and needs, from conception to production.',
-            'Frontend and backend development',
-            'Design and integration of APIs',
-            'Development of modern and responsive web interfaces',
-            'Working with various JavaScript/PHP technologies and frameworks',
-            'Autonomous management of projects and technical requirements',
+            'Deliver web solutions from requirements and technical design through development, deployment, and maintenance.',
+            'Build responsive frontend interfaces, backend services, API integrations, and CMS-driven websites.',
+            'Manage projects independently, communicate with clients, and translate business needs into technical requirements.',
           ],
         },
         {
-          role: 'Full Stack Developer — Internship',
+          role: 'Full Stack Developer Intern',
           company: 'PIC DIGITAL',
-          period: 'April - June 2024',
+          period: 'April – June 2024',
           bullets: [
-            'Internship completed as part of my Full Stack Developer training at GRETA-CFA Aquitaine.',
-            'Participation in web application development',
-            'Frontend and backend development',
-            'Collaboration with the development team',
-            'Practical application of skills acquired during training',
+            'Contributed to web application development across frontend and backend tasks while collaborating with the development team. Used Next.js and Express.js.',
           ],
         },
       ],
@@ -231,22 +217,18 @@ export const translations = {
       leadershipRoles: [
         {
           role: 'Manager & Team Leader',
-          company: 'BIATA COMPANIES & BIATA Ayo Ventures - Lagos, Nigeria',
-          period: '2016 - 2022',
+          company: 'BIATA Companies & BIATA Ayo Ventures',
+          period: '2016 – 2022',
           bullets: [
-            'Managed company operations and supervised multidisciplinary teams',
-            'Oversaw technical support services and operational workflows',
-            'Coordinated equipment management and logistics',
+            'Managed operations, supervised multidisciplinary teams, coordinated technical support workflows, and managed equipment and logistics.',
           ],
         },
         {
           role: 'Founder & Business Owner',
           company: 'Maggy-nificent Enterprise',
-          period: '2022 - Present',
+          period: '2022 – Present',
           bullets: [
-            'Founded and managed business operations, logistics, and financial activities',
-            'Oversaw accounting, payments, and supplier coordination',
-            'Handled operational decision-making and business administration',
+            'Manage business operations, logistics, accounting coordination, supplier relationships, payments, and operational decision-making.',
           ],
         },
       ],
@@ -276,40 +258,42 @@ export const translations = {
       projectItems: [
         {
           name: 'Marion Poizeau Website',
-          url: 'marionpoizeau.com',
-          desc: 'Full Next.js rebuild with ongoing maintenance and SEO optimization.',
+          url: '',
+          desc: 'Next.js rebuild, ongoing maintenance, and SEO optimization. Live website.',
         },
         {
           name: 'Timeo Coaching Platform',
-          url: 'timeocoaching.com',
-          desc: 'Full stack platform with Prismic CMS, GSAP animations, and Vercel deployment.',
+          url: '',
+          desc: 'Full-stack platform using Prismic CMS, GSAP animations, and Vercel deployment. Live website.',
         },
         {
           name: 'Amandine Mauries Website',
-          url: 'amandinemauries.fr',
-          desc: 'WordPress CMS with Elementor, Yoast SEO, Google Analytics, and Complianz cookie compliance.',
+          url: '',
+          desc: 'WordPress, Elementor, Yoast SEO, Google Analytics, and Complianz cookie compliance. Live website.',
         },
         {
           name: 'React Native Application',
           url: '',
-          desc: 'Cross-platform mobile app - architecture, API integration, and state management.',
+          desc: 'Cross-platform mobile application involving architecture, API integration, and state management.',
         },
       ],
 
       skillCategories: {
-        backendAuth: 'Backend & Auth',
-        databasesDevops: 'Databases & DevOps',
-        documentation: 'Documentation',
-        frontendUi: 'Frontend & UI',
-        cmsMobile: 'CMS & Mobile',
+        backend: 'Backend',
+        frontend: 'Frontend',
+        security: 'Security',
+        databases: 'Data & DevOps',
+        docs: 'Documentation & CMS',
+        mobile: 'Mobile',
       },
 
       skillItems: {
-        backendAuth: ['Symfony (PHP)', 'Node.js', 'Express.js', 'REST APIs', 'JWT', 'OAuth2', 'RBAC', 'SSO', 'LemonLDAP::NG'],
-        databasesDevops: ['PostgreSQL', 'MySQL', 'Docker', 'Git', 'Vercel', 'AWS (EC2, S3)', 'CI/CD'],
-        documentation: ['Swagger / OpenAPI', 'Nelmio API Doc', 'GitBook'],
-        frontendUi: ['Next.js', 'React', 'Vue.js', 'Tailwind CSS', 'PrimeVue', 'PrimeFlex', 'GSAP', 'Responsive Design'],
-        cmsMobile: ['WordPress', 'Prismic CMS', 'Headless CMS', 'React Native', 'JavaScript'],
+        backend: ['Symfony', 'PHP', 'Node.js', 'Express.js', 'REST APIs'],
+        frontend: ['JavaScript', 'React', 'Next.js', 'Vue.js', 'Tailwind CSS', 'PrimeVue', 'GSAP', 'responsive design'],
+        security: ['JWT', 'OAuth2', 'RBAC', 'SSO', 'LemonLDAP::NG'],
+        databases: ['PostgreSQL', 'MySQL', 'Docker', 'Git', 'Vercel', 'AWS EC2/S3', 'CI/CD'],
+        docs: ['Swagger/OpenAPI', 'Nelmio API Doc', 'GitBook', 'WordPress', 'Prismic CMS', 'headless CMS'],
+        mobile: ['React Native'],
       },
 
       docTitle: 'Divine Osuu - Full Stack Developer CV',
@@ -329,36 +313,34 @@ export const translations = {
 
     hero: {
       role: 'Développeur Full Stack',
-      tagline: 'Systèmes Backend • APIs Scalables • Authentification • Architecture Frontend Moderne',
+      tagline: 'Symfony · PHP · Node.js · React · Next.js · Vue.js · PostgreSQL',
       description:
-        'Développeur Full Stack expérimenté, je m\'appuie sur une solide pratique pour concevoir des systèmes backend robustes, des architectures frontend intuitives et des workflows de déploiement fluides.',
+        'Développeur Full Stack avec une expérience professionnelle dans la construction et la maintenance d\'applications web couvrant le backend, le frontend, les données, l\'authentification, la documentation et le déploiement.',
     },
 
     about: {
       title: 'Profil Professionnel',
-      p1: 'Développeur Full Stack expérimenté, je m\'appuie sur une solide pratique pour concevoir des systèmes backend robustes, des architectures frontend intuitives et des workflows de déploiement fluides. Je maîtrise l\'intégralité du cycle de vie logiciel, de la sécurisation des API à la maintenance d\'applications scalables avec <strong>Symfony, Node.js, Next.js et PostgreSQL</strong>.',
-      p2: 'Mon parcours est marqué par plusieurs années de leadership et de responsabilité entrepreneuriale, ce qui a affûté mon sens de la décision et ma capacité à résoudre des problèmes complexes. Toujours tourné vers l\'innovation, j\'étends continuellement mon expertise pour offrir des solutions toujours plus transversales.',
+      p1: 'Développeur Full Stack avec une expérience professionnelle dans la construction et la maintenance d\'applications web couvrant le backend, le frontend, les données, l\'authentification, la documentation et le déploiement. Expérimenté avec Symfony/PHP, Node.js, Vue.js, React/Next.js, PostgreSQL, Docker, AWS, Vercel, JWT, RBAC, SSO et les API REST. À l\'aise pour traduire les exigences clients en solutions techniques, contribuer aux décisions d\'architecture et mener les fonctionnalités du développement à la production. Une expérience supplémentaire dans la direction d\'équipes et la gestion d\'entreprises apporte de solides compétences en prise de responsabilité, communication et prise de décision.',
+      p2: '',
     },
 
     skills: {
-      title: 'Compétences Clés',
+      title: 'Compétences Techniques',
       categories: {
-        backend: 'Ingénierie Backend',
-        auth: 'Authentification & Sécurité',
-        frontend: 'Ingénierie Frontend',
-        databases: 'Bases de Données & DevOps',
-        cms: 'CMS & Contenu',
-        docs: 'Documentation',
-        mobile: 'Développement Mobile',
+        backend: 'Backend',
+        frontend: 'Frontend',
+        security: 'Sécurité',
+        databases: 'Données & DevOps',
+        docs: 'Documentation & CMS',
+        mobile: 'Mobile',
       },
       items: {
-        backend: ['Symfony (PHP)', 'Node.js', 'Express.js', 'Architecture API REST', 'Conception Logique Métier', 'Débogage en Production', 'Architecture Sécurisée'],
-        auth: ['Authentification JWT', 'Authentification Basée sur Session', 'OAuth2 / OIDC', 'RBAC (Contrôle d\'Accès Basé sur les Rôles)', 'Implémentation SSO', 'LemonLDAP::NG', 'Validation de Jeton Sécurisée', 'Normes OWASP'],
-        frontend: ['Next.js', 'React.js', 'Vue.js', 'TypeScript', 'Tailwind CSS', 'PrimeVue', 'PrimeFlex', 'Animations GSAP', 'Architecture Orientée Composants'],
-        databases: ['PostgreSQL', 'MySQL', 'Modélisation Relationnelle', 'Optimisation de Requêtes', 'Docker', 'Workflows Git / GitHub', 'Vercel', 'AWS (EC2, S3)'],
-        cms: ['WordPress', 'Elementor', 'CMS Headless', 'Prismic CMS', 'Développement de Thème Personnalisé'],
-        docs: ['Swagger / OpenAPI', 'Nelmio API Doc', 'GitBook'],
-        mobile: ['React Native', 'JavaScript'],
+        backend: ['Symfony', 'PHP', 'Node.js', 'Express.js', 'API REST'],
+        frontend: ['JavaScript', 'React', 'Next.js', 'Vue.js', 'Tailwind CSS', 'PrimeVue', 'GSAP', 'design responsive'],
+        security: ['JWT', 'OAuth2', 'RBAC', 'SSO', 'LemonLDAP::NG'],
+        databases: ['PostgreSQL', 'MySQL', 'Docker', 'Git', 'Vercel', 'AWS EC2/S3', 'CI/CD'],
+        docs: ['Swagger/OpenAPI', 'Nelmio API Doc', 'GitBook', 'WordPress', 'Prismic CMS', 'CMS headless'],
+        mobile: ['React Native'],
       },
     },
 
@@ -368,39 +350,31 @@ export const translations = {
         {
           role: 'Développeur Full Stack',
           company: 'IF Technologies',
-          period: 'Septembre 2024 - Aujourd\'hui',
+          period: 'Septembre 2024 – Présent',
           bullets: [
-            'Développement et maintenance d\'applications full stack en production avec Symfony, Vue.js, PostgreSQL, Node.js et Tailwind CSS',
-            'Conception de systèmes backend incluant APIs, flux d\'authentification et architecture de base de données',
-            'Implémentation de systèmes d\'authentification avec JWT, RBAC et LemonLDAP::NG',
-            'Création et maintenance de la documentation API avec Swagger, Nelmio et GitBook',
-            'Participation aux discussions d\'architecture, à la planification technique et aux décisions de feuille de route',
-            'Travail direct avec les clients pour analyser les besoins et définir les solutions techniques',
+            'Développer et maintenir des applications web de production avec Symfony, Vue.js, Node.js, PostgreSQL et Tailwind CSS.',
+            'Concevoir et implémenter des API REST, flux d\'authentification, structures de base de données et services backend.',
+            'Implémenter un contrôle d\'accès sécurisé avec JWT, RBAC et LemonLDAP::NG/SSO.',
+            'Créer et maintenir la documentation API avec Swagger/OpenAPI, Nelmio API Doc et GitBook.',
+            'Contribuer aux discussions d\'architecture, à la planification technique, aux décisions de roadmap et à l\'analyse des exigences clients.',
           ],
         },
         {
           role: 'Développeur Full Stack Freelance',
           company: '',
-          period: '2022 - Aujourd\'hui',
+          period: '2022 – Présent',
           bullets: [
-            'Développement de solutions web pour des projets et besoins clients, de la conception à la mise en production.',
-            'Développement frontend et backend',
-            'Conception et intégration d\'API',
-            'Développement d\'interfaces web modernes et responsives',
-            'Travail avec différentes technologies et frameworks JavaScript/PHP',
-            'Gestion autonome des projets et des besoins techniques',
+            'Livrer des solutions web des exigences et de la conception technique jusqu\'au développement, déploiement et maintenance.',
+            'Construire des interfaces frontend responsives, services backend, intégrations d\'API et sites web pilotés par CMS.',
+            'Gérer des projets de manière autonome, communiquer avec les clients et traduire les besoins métiers en exigences techniques.',
           ],
         },
         {
           role: 'Développeur Full Stack — Stage',
           company: 'PIC DIGITAL',
-          period: 'Avril - Juin 2024',
+          period: 'Avril – Juin 2024',
           bullets: [
-            'Stage réalisé dans le cadre de ma formation Développeur Full Stack au GRETA-CFA Aquitaine.',
-            'Participation au développement d\'applications web',
-            'Développement frontend et backend',
-            'Collaboration avec l\'équipe de développement',
-            'Mise en pratique des compétences acquises en formation',
+            'Contribué au développement d\'applications web sur les tâches frontend et backend en collaborant avec l\'équipe de développement. Utilisé Next.js et Express.js.',
           ],
         },
       ],
@@ -434,27 +408,31 @@ export const translations = {
     },
 
     projects: {
-      title: 'Projets Professionnels',
+      title: 'Projets Sélectionnés',
       items: [
         {
           title: 'Site Marion Poizeau',
           description:
-            'Développé initialement avec WordPress (2022) ; entièrement reconstruit avec Next.js en avril 2026. J\'assure la maintenance technique et les mises à jour en production.',
+            'Reconstruction Next.js, maintenance continue et optimisation SEO. Site en ligne.',
         },
         {
           title: 'Plateforme Timeo Coaching',
           description:
-            'Plateforme de coaching full stack avec gestion de contenu dynamique. J\'assure la maintenance continue et l\'optimisation de la sécurité.',
+            'Plateforme full stack utilisant Prismic CMS, animations GSAP et déploiement Vercel. Site en ligne.',
         },
         {
           title: 'Site Amandine Mauries',
           description:
-            'Site professionnel construit avec WordPress CMS, Elementor et optimisé avec Yoast SEO. Intégration de Google Analytics, Tag Manager et Complianz pour la conformité cookies.',
+            'WordPress, Elementor, Yoast SEO, Google Analytics et conformité cookies Complianz. Site en ligne.',
+        },
+        {
+          title: 'Application React Native',
+          description:
+            'Application mobile multiplateforme impliquant l\'architecture, l\'intégration API et la gestion d\'état.',
         },
       ],
-      flutter:
-        'Développement en cours d\'une application mobile multiplateforme axée sur l\'architecture mobile, l\'intégration API, la gestion d\'état et les systèmes d\'UI responsive.',
-      flutterTitle: 'Application React Native',
+      flutter: '',
+      flutterTitle: '',
     },
 
     education: {
@@ -490,15 +468,15 @@ export const translations = {
     },
 
     pdf: {
-      profileTitle: 'Profil Professionnel',
+      profileTitle: 'Résumé Professionnel',
       profileSummary:
-        'Développeur Full Stack expérimenté, je m\'appuie sur une solide pratique pour concevoir des systèmes backend robustes, des architectures frontend intuitives et des workflows de déploiement fluides. Je maîtrise l\'intégralité du cycle de vie logiciel, de la sécurisation des API à la maintenance d\'applications scalables avec Symfony, Node.js, Next.js et PostgreSQL. Mon parcours est marqué par plusieurs années de leadership et de responsabilité entrepreneuriale, ce qui a affûté mon sens de la décision et ma capacité à résoudre des problèmes complexes. Toujours tourné vers l\'innovation, j\'étends continuellement mon expertise pour offrir des solutions toujours plus transversales.',
+        'Développeur Full Stack avec une expérience professionnelle dans la construction et la maintenance d\'applications web couvrant le backend, le frontend, les données, l\'authentification, la documentation et le déploiement. Expérimenté avec Symfony/PHP, Node.js, Vue.js, React/Next.js, PostgreSQL, Docker, AWS, Vercel, JWT, RBAC, SSO et les API REST. À l\'aise pour traduire les exigences clients en solutions techniques, contribuer aux décisions d\'architecture et mener les fonctionnalités du développement à la production. Une expérience supplémentaire dans la direction d\'équipes et la gestion d\'entreprises apporte de solides compétences en prise de responsabilité, communication et prise de décision.',
       experienceTitle: 'Expérience Professionnelle',
       skillsTitle: 'Compétences Techniques',
-      leadershipTitle: 'Leadership & Entrepreneuriat',
-      educationTitle: 'Formation',
+      leadershipTitle: 'Expérience de Leadership & Business Supplémentaire',
+      educationTitle: 'Formation & Langues',
       languagesTitle: 'Langues',
-      projectsTitle: 'Projets Professionnels',
+      projectsTitle: 'Projets Sélectionnés',
       footerLabel: 'Divine Osuu - Développeur Full Stack',
       role: 'Développeur Full Stack',
 
@@ -506,39 +484,31 @@ export const translations = {
         {
           role: 'Développeur Full Stack',
           company: 'IF Technologies',
-          period: 'Septembre 2024 - Aujourd\'hui',
+          period: 'Septembre 2024 – Présent',
           bullets: [
-            'Développement et maintenance d\'applications full stack en production avec Symfony, Vue.js, PostgreSQL, Node.js et Tailwind CSS',
-            'Conception de systèmes backend incluant APIs, flux d\'authentification et architecture de base de données',
-            'Implémentation de systèmes d\'authentification avec JWT, RBAC et LemonLDAP::NG',
-            'Création et maintenance de la documentation API avec Swagger, Nelmio et GitBook',
-            'Participation aux discussions d\'architecture, à la planification technique et aux décisions de feuille de route',
-            'Travail direct avec les clients pour analyser les besoins et définir les solutions techniques',
+            'Développer et maintenir des applications web de production avec Symfony, Vue.js, Node.js, PostgreSQL et Tailwind CSS.',
+            'Concevoir et implémenter des API REST, flux d\'authentification, structures de base de données et services backend.',
+            'Implémenter un contrôle d\'accès sécurisé avec JWT, RBAC et LemonLDAP::NG/SSO.',
+            'Créer et maintenir la documentation API avec Swagger/OpenAPI, Nelmio API Doc et GitBook.',
+            'Contribuer aux discussions d\'architecture, à la planification technique, aux décisions de roadmap et à l\'analyse des exigences clients.',
           ],
         },
         {
           role: 'Développeur Full Stack Freelance',
           company: '',
-          period: '2022 - Aujourd\'hui',
+          period: '2022 – Présent',
           bullets: [
-            'Développement de solutions web pour des projets et besoins clients, de la conception à la mise en production.',
-            'Développement frontend et backend',
-            'Conception et intégration d\'API',
-            'Développement d\'interfaces web modernes et responsives',
-            'Travail avec différentes technologies et frameworks JavaScript/PHP',
-            'Gestion autonome des projets et des besoins techniques',
+            'Livrer des solutions web des exigences et de la conception technique jusqu\'au développement, déploiement et maintenance.',
+            'Construire des interfaces frontend responsives, services backend, intégrations d\'API et sites web pilotés par CMS.',
+            'Gérer des projets de manière autonome, communiquer avec les clients et traduire les besoins métiers en exigences techniques.',
           ],
         },
         {
           role: 'Développeur Full Stack — Stage',
           company: 'PIC DIGITAL',
-          period: 'Avril - Juin 2024',
+          period: 'Avril – Juin 2024',
           bullets: [
-            'Stage réalisé dans le cadre de ma formation Développeur Full Stack au GRETA-CFA Aquitaine.',
-            'Participation au développement d\'applications web',
-            'Développement frontend et backend',
-            'Collaboration avec l\'équipe de développement',
-            'Mise en pratique des compétences acquises en formation',
+            'Contribué au développement d\'applications web sur les tâches frontend et backend en collaborant avec l\'équipe de développement. Utilisé Next.js et Express.js.',
           ],
         },
       ],
@@ -546,22 +516,18 @@ export const translations = {
       leadershipRoles: [
         {
           role: 'Responsable & Chef d\'Équipe',
-          company: 'BIATA COMPANIES & BIATA Ayo Ventures - Lagos, Nigeria',
-          period: '2016 - 2022',
+          company: 'BIATA Companies & BIATA Ayo Ventures',
+          period: '2016 – 2022',
           bullets: [
-            'Gestion des opérations et supervision d\'équipes pluridisciplinaires',
-            'Supervision des services de support technique et des workflows opérationnels',
-            'Coordination de la gestion des équipements et de la logistique',
+            'Gérer les opérations, superviser les équipes pluridisciplinaires, coordonner les workflows de support technique et gérer les équipements et la logistique.',
           ],
         },
         {
           role: 'Fondateur & Chef d\'Entreprise',
           company: 'Maggy-nificent Enterprise',
-          period: '2022 - Présent',
+          period: '2022 – Présent',
           bullets: [
-            'Fondé et géré les opérations commerciales, la logistique et les activités financières',
-            'Supervision de la comptabilité, des paiements et de la coordination fournisseurs',
-            'Prise de décisions opérationnelles et administration de l\'entreprise',
+            'Gérer les opérations commerciales, la logistique, la coordination comptable, les relations fournisseurs, les paiements et la prise de décision opérationnelle.',
           ],
         },
       ],
@@ -591,40 +557,42 @@ export const translations = {
       projectItems: [
         {
           name: 'Site Marion Poizeau',
-          url: 'marionpoizeau.com',
-          desc: 'Reconstruction complète en Next.js avec maintenance continue et optimisation SEO.',
+          url: '',
+          desc: 'Reconstruction Next.js, maintenance continue et optimisation SEO. Site en ligne.',
         },
         {
           name: 'Plateforme Timeo Coaching',
-          url: 'timeocoaching.com',
-          desc: 'Plateforme full stack avec Prismic CMS, animations GSAP et déploiement Vercel.',
+          url: '',
+          desc: 'Plateforme full stack utilisant Prismic CMS, animations GSAP et déploiement Vercel. Site en ligne.',
         },
         {
           name: 'Site Amandine Mauries',
-          url: 'amandinemauries.fr',
-          desc: 'WordPress CMS avec Elementor, Yoast SEO, Google Analytics et Complianz conformité cookies.',
+          url: '',
+          desc: 'WordPress, Elementor, Yoast SEO, Google Analytics et conformité cookies Complianz. Site en ligne.',
         },
         {
           name: 'Application React Native',
           url: '',
-          desc: 'Application mobile multiplateforme - architecture, intégration API et gestion d\'état.',
+          desc: 'Application mobile multiplateforme impliquant l\'architecture, l\'intégration API et la gestion d\'état.',
         },
       ],
 
       skillCategories: {
-        backendAuth: 'Backend & Auth',
-        databasesDevops: 'Bases de Données & DevOps',
-        documentation: 'Documentation',
-        frontendUi: 'Frontend & UI',
-        cmsMobile: 'CMS & Mobile',
+        backend: 'Backend',
+        frontend: 'Frontend',
+        security: 'Sécurité',
+        databases: 'Données & DevOps',
+        docs: 'Documentation & CMS',
+        mobile: 'Mobile',
       },
 
       skillItems: {
-        backendAuth: ['Symfony (PHP)', 'Node.js', 'Express.js', 'API REST', 'JWT', 'OAuth2', 'RBAC', 'SSO', 'LemonLDAP::NG'],
-        databasesDevops: ['PostgreSQL', 'MySQL', 'Docker', 'Git', 'Vercel', 'AWS (EC2, S3)', 'CI/CD'],
-        documentation: ['Swagger / OpenAPI', 'Nelmio API Doc', 'GitBook'],
-        frontendUi: ['Next.js', 'React', 'Vue.js', 'Tailwind CSS', 'PrimeVue', 'PrimeFlex', 'GSAP', 'Design Réactif'],
-        cmsMobile: ['WordPress', 'Prismic CMS', 'CMS Headless', 'React Native', 'JavaScript'],
+        backend: ['Symfony', 'PHP', 'Node.js', 'Express.js', 'API REST'],
+        frontend: ['JavaScript', 'React', 'Next.js', 'Vue.js', 'Tailwind CSS', 'PrimeVue', 'GSAP', 'Design Réactif'],
+        security: ['JWT', 'OAuth2', 'RBAC', 'SSO', 'LemonLDAP::NG'],
+        databases: ['PostgreSQL', 'MySQL', 'Docker', 'Git', 'Vercel', 'AWS EC2/S3', 'CI/CD'],
+        docs: ['Swagger/OpenAPI', 'Nelmio API Doc', 'GitBook', 'WordPress', 'Prismic CMS', 'CMS Headless'],
+        mobile: ['React Native'],
       },
 
       docTitle: 'Divine Osuu - Développeur Full Stack CV',

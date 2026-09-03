@@ -1,15 +1,14 @@
 'use client';
 
 import React from 'react';
-import { Server, Layout, Shield, Database, Wrench, Smartphone, FileText } from 'lucide-react';
+import { Server, Layout, Shield, Database, Smartphone, FileText } from 'lucide-react';
 import { useLanguage } from './LanguageContext';
 
 const skillsConfig = [
   { key: 'backend' as const, icon: <Server className="text-gold" /> },
-  { key: 'auth' as const, icon: <Shield className="text-gold" /> },
   { key: 'frontend' as const, icon: <Layout className="text-gold" /> },
+  { key: 'security' as const, icon: <Shield className="text-gold" /> },
   { key: 'databases' as const, icon: <Database className="text-gold" /> },
-  { key: 'cms' as const, icon: <Wrench className="text-gold" /> },
   { key: 'docs' as const, icon: <FileText className="text-gold" /> },
   { key: 'mobile' as const, icon: <Smartphone className="text-gold" /> }
 ];
