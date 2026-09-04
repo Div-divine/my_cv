@@ -245,6 +245,12 @@ const s = StyleSheet.create({
     fontWeight: 700,
     color: C.primary,
   },
+  projectNameLink: {
+    fontSize: 9.5,
+    fontWeight: 700,
+    color: C.gold,
+    textDecoration: 'underline',
+  },
   projectUrl: {
     fontSize: 8,
     color: C.gold,
@@ -474,8 +480,13 @@ const CVDocument = ({ lang = 'en' }: { lang?: Lang }) => {
               <Section title={t.projectsTitle} />
               {t.projectItems.map((proj, idx) => (
                 <View key={idx} style={s.projectRow}>
-                  <Text style={s.projectName}>{proj.name}</Text>
-                  {proj.url ? <Text style={s.projectUrl}>{proj.url}</Text> : null}
+                  {proj.url ? (
+                    <Link src={proj.url} style={s.projectNameLink}>
+                      <Text>{proj.name}</Text>
+                    </Link>
+                  ) : (
+                    <Text style={s.projectName}>{proj.name}</Text>
+                  )}
                   <Text style={s.projectDesc}>{proj.desc}</Text>
                 </View>
               ))}

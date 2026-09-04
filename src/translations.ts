@@ -258,17 +258,17 @@ export const translations = {
       projectItems: [
         {
           name: 'Marion Poizeau Website',
-          url: '',
+          url: 'https://www.marionpoizeau.com/',
           desc: 'Next.js rebuild, ongoing maintenance, and SEO optimization. Live website.',
         },
         {
           name: 'Timeo Coaching Platform',
-          url: '',
+          url: 'https://www.timeocoaching.com/',
           desc: 'Full-stack platform using Prismic CMS, GSAP animations, and Vercel deployment. Live website.',
         },
         {
           name: 'Amandine Mauries Website',
-          url: '',
+          url: 'https://amandinemauries.fr/',
           desc: 'WordPress, Elementor, Yoast SEO, Google Analytics, and Complianz cookie compliance. Live website.',
         },
         {
@@ -557,17 +557,17 @@ export const translations = {
       projectItems: [
         {
           name: 'Site Marion Poizeau',
-          url: '',
+          url: 'https://www.marionpoizeau.com/',
           desc: 'Reconstruction Next.js, maintenance continue et optimisation SEO. Site en ligne.',
         },
         {
           name: 'Plateforme Timeo Coaching',
-          url: '',
+          url: 'https://www.timeocoaching.com/',
           desc: 'Plateforme full stack utilisant Prismic CMS, animations GSAP et déploiement Vercel. Site en ligne.',
         },
         {
           name: 'Site Amandine Mauries',
-          url: '',
+          url: 'https://amandinemauries.fr/',
           desc: 'WordPress, Elementor, Yoast SEO, Google Analytics et conformité cookies Complianz. Site en ligne.',
         },
         {
